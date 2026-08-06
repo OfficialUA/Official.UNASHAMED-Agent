@@ -1,0 +1,342 @@
+name: Generate Clips with Metadata
+
+on:
+  workflow_dispatch:
+    inputs:
+      video_url:
+        description: 'YouTube URL or Video ID'
+        required: true
+        type: string
+      clip_count:
+        description: 'Number of clips to generate'
+        default: '5'
+        required: true
+        type: string
+      channel_name:
+        description: 'Channel name (for tracking)'
+        required: false
+        type: string
+
+jobs:
+  generate-clips:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+      
+      - name: Install dependencies
+        run: |
+          pip install yt-dlp requests anthropic
+          apt-get update && apt-get install -y ffmpeg
+      
+      - name: Download video and extract audio
+        id: download
+        run: |
+          python - <<EOF
+          import yt_dlp
+          import os
+          
+          video_url = "${{ github.event.inputs.video_url }}"
+          if not video_url.startswith('http'):
+              video_url = f"https://www.youtube.com/watch?v={video_url}"
+          
+          ydl_opts = {
+              'format': 'bestaudio/best',
+              'postprocessors': [{
+                  'key': 'FFmpegExtractAudio',
+                  'preferredcodec': 'wav',
+                  'preferredquality': '192',
+              }],
+              'outtmpl': 'audio',
+              'quiet': False,
+          }
+          
+          try:
+              with yt_dlp.YoutubeDL(ydl_opts) as ydl:
+                  info = ydl.extract_info(video_url, download=True)
+                  video_id = info.get('id')
+                  title = info.get('title')
+              
+              print(f"VIDEO_ID={video_id}")
+              print(f"TITLE={title}")
+          except Exception as e:
+              print(f"Error: {e}")
+              exit(1)
+          EOF
+      
+      - name: Generate transcript with Deepgram
+        id: transcript
+        env:
+          DEEPGRAM_API_KEY: ${{ secrets.DEEPGRAM_API_KEY }}
+        run: |
+          python - <<EOF
+          import requests
+          import json
+          
+          with open('audio.wav', 'rb') as f:
+              audio_data = f.read()
+          
+          headers = {
+              "Authorization": f"Token ${{ secrets.DEEPGRAM_API_KEY }}",
+              "Content-Type": "audio/wav"
+          }
+          
+          params = {
+              "model": "nova-2",
+              "punctuate": "true",
+              "paragraphs": "true",
+              "utterances": "true",
+              "timestamps": "true",
+          }
+          
+          response = requests.post(
+              "https://api.deepgram.com/v1/listen",
+              headers=headers,
+              params=params,
+              data=audio_data
+          )
+          
+          transcript_data = response.json()
+          
+          with open('transcript.json', 'w') as f:
+              json.dump(transcript_data, f, indent=2)
+          
+          print("Transcript generated successfully")
+          EOF
+      
+      - name: Extract clip segments with Claude
+        id: segments
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: |
+          python - <<EOF
+          import json
+          from anthropic import Anthropic
+          import re
+          
+          with open('transcript.json', 'r') as f:
+              transcript_data = json.load(f)
+          
+          transcript_text = ""
+          for result in transcript_data.get('results', {}).get('channels', [{}])[0].get('alternatives', [{}])[0].get('words', []):
+              if 'word' in result:
+                  start = result.get('start', 0)
+                  end = result.get('end', 0)
+                  word = result['word']
+                  transcript_text += f"[{start:.2f}-{end:.2f}] {word} "
+          
+          client = Anthropic()
+          
+          prompt = f"""You are a YouTube video clipping expert for a Christian gospel channel focused on Romans 1:16 and End Times eschatology.
+
+TRANSCRIPT:
+{transcript_text[:4000]}
+
+TASK: Extract the 5 BEST 30-90 second clip segments from this transcript.
+
+FILTERING CRITERIA:
+1. High-conviction statements about NOT being ashamed of the Gospel
+2. Direct warnings, signs, or biblical context regarding End Times / Christ's return
+3. Strong opening hook in first 5 seconds (striking question or bold statement)
+4. Complete thought with clear spiritual takeaway
+5. Natural audio boundaries (complete sentences)
+
+RETURN ONLY valid JSON (no other text):
+{{
+  "clips": [
+    {{
+      "start_time": 0.0,
+      "end_time": 45.5,
+      "hook_text": "First 10 words to hook viewer...",
+      "suggested_title": "Why Christians Must Be Unashamed",
+      "relevance": "Romans 1:16 / Gospel conviction",
+      "confidence": 0.95
+    }}
+  ]
+}}
+
+Return minimum 3, maximum 5 clips. Only return valid JSON."""
+
+          message = client.messages.create(
+              model="claude-opus-4-1",
+              max_tokens=1500,
+              messages=[
+                  {"role": "user", "content": prompt}
+              ]
+          )
+          
+          response_text = message.content[0].text
+          json_match = re.search(r'\{.*\}', response_text, re.DOTALL)
+          
+          if json_match:
+              clips_data = json.loads(json_match.group())
+          else:
+              clips_data = {"clips": []}
+          
+          with open('segments.json', 'w') as f:
+              json.dump(clips_data, f, indent=2)
+          
+          print(f"Extracted {len(clips_data.get('clips', []))} clip segments")
+          EOF
+      
+      - name: Generate platform-specific metadata
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: |
+          python - <<EOF
+          import json
+          import os
+          from anthropic import Anthropic
+          import re
+          
+          with open('segments.json', 'r') as f:
+              segments_data = json.load(f)
+          
+          clips = segments_data.get('clips', [])
+          client = Anthropic()
+          
+          all_metadata = {'clips': []}
+          
+          for idx, clip in enumerate(clips):
+              print(f"Generating metadata for clip {idx + 1}/{len(clips)}...")
+              
+              hook_text = clip.get('hook_text', '')
+              suggested_title = clip.get('suggested_title', '')
+              relevance = clip.get('relevance', '')
+              
+              prompt = f"""You are a social media content strategist for a Christian gospel channel (UNASHAMED) focused on Romans 1:16 and End Times eschatology.
+
+CLIP DETAILS:
+- Hook: {hook_text}
+- Title: {suggested_title}
+- Theme: {relevance}
+
+TASK: Generate platform-specific captions, titles, and hashtags for this 30-90 second clip.
+
+REQUIREMENTS:
+1. TikTok: Generate 3 caption variations (mix of hook-aggressive and question-based). Each under 150 chars. Include 5-8 relevant hashtags.
+2. YouTube Shorts: Adjust the hook slightly longer/more educational angle. Same hashtags but YouTube-optimized.
+3. Instagram: Story-focused, engagement angle. Same content angle but Instagram tone. Different hashtag mix.
+
+All should reference Romans 1:16, gospel conviction, or End Times context where relevant.
+
+RETURN ONLY VALID JSON (no other text):
+{{
+  "tiktok": {{
+    "title": "Short punchy title for TikTok",
+    "captions": [
+      "CAPTION 1 - Hook aggressive style...",
+      "CAPTION 2 - Question based style...",
+      "CAPTION 3 - Mix of both..."
+    ],
+    "hashtags": ["#unashamed", "#romans116", "#gospel", "#endtimes", "#prophecy", "#truth", "#jesus"]
+  }},
+  "youtube": {{
+    "title": "Slightly longer title for YouTube Shorts",
+    "caption": "Caption with slightly more context...",
+    "hashtags": ["#YoutubeShorts", "#Gospel", "#Romans116", "#Unashamed", "#EndTimes", "#Scripture"]
+  }},
+  "instagram": {{
+    "title": "Story-focused title",
+    "caption": "Engagement-focused caption with call-to-action...",
+    "hashtags": ["#unashamed", "#gospel", "#romans116", "#christianfaith", "#bibletalk", "#endtimes", "#faith", "#jesus"]
+  }}
+}}"""
+
+              message = client.messages.create(
+                  model="claude-opus-4-1",
+                  max_tokens=2000,
+                  messages=[
+                      {"role": "user", "content": prompt}
+                  ]
+              )
+              
+              response_text = message.content[0].text
+              json_match = re.search(r'\{.*\}', response_text, re.DOTALL)
+              
+              if json_match:
+                  metadata = json.loads(json_match.group())
+                  clip_with_metadata = {
+                      **clip,
+                      'metadata': metadata,
+                      'clip_index': idx + 1
+                  }
+                  all_metadata['clips'].append(clip_with_metadata)
+          
+          with open('clips-with-metadata.json', 'w') as f:
+              json.dump(all_metadata, f, indent=2)
+          
+          print(f"Generated metadata for {len(all_metadata['clips'])} clips")
+          EOF
+      
+      - name: Store clips for approval
+        run: |
+          python - <<EOF
+          import json
+          from datetime import datetime
+          
+          with open('clips-with-metadata.json', 'r') as f:
+              clips_data = json.load(f)
+          
+          approval_data = {
+              "video_url": "${{ github.event.inputs.video_url }}",
+              "channel_name": "${{ github.event.inputs.channel_name }}",
+              "timestamp": datetime.utcnow().isoformat(),
+              "clips_ready_for_review": len(clips_data.get('clips', [])),
+              "clips": clips_data.get('clips', []),
+              "status": "awaiting_approval"
+          }
+          
+          with open('pending-clips.json', 'w') as f:
+              json.dump(approval_data, f, indent=2)
+          
+          print("Clips staged for approval")
+          EOF
+      
+      - name: Commit clips for approval
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add pending-clips.json clips-with-metadata.json segments.json
+          git commit -m "🎬 Clips generated with metadata - awaiting approval" || echo "No changes"
+          git push
+      
+      - name: Notify Telegram (Clips Ready)
+        env:
+          TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: |
+          python - <<EOF
+          import requests
+          import json
+          
+          with open('pending-clips.json', 'r') as f:
+              data = json.load(f)
+              clip_count = data.get('clips_ready_for_review', 0)
+          
+          message = f"""
+          🎬 CLIPS READY FOR APPROVAL
+          
+          📊 Generated {clip_count} clip segments
+          Platform-specific captions ready:
+          • TikTok (3 variations per clip)
+          • YouTube Shorts
+          • Instagram
+          
+          Open dashboard to preview & approve:
+          All metadata prepared for instant posting
+          """
+          
+          url = f"https://api.telegram.org/bot${{ secrets.TELEGRAM_TOKEN }}/sendMessage"
+          payload = {
+              "chat_id": "${{ secrets.TELEGRAM_CHAT_ID }}",
+              "text": message,
+              "parse_mode": "HTML"
+          }
+          requests.post(url, json=payload)
+          EOF

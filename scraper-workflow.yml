@@ -1,0 +1,64 @@
+name: Daily YouTube Scrape
+
+on:
+  schedule:
+    # Run daily at 8 AM UTC (adjust to your timezone)
+    - cron: '0 8 * * *'
+  workflow_dispatch:  # Allow manual trigger
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+      
+      - name: Install dependencies
+        run: |
+          pip install requests
+      
+      - name: Run scraper
+        env:
+          YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
+        run: python scraper.py
+      
+      - name: Commit and push results
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add videos.json
+          git commit -m "🎬 Daily YouTube scrape - $(date)" || echo "No changes"
+          git push
+      
+      - name: Notify Telegram (Videos Found)
+        if: success()
+        env:
+          TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: |
+          python - <<EOF
+          import requests
+          import json
+          
+          try:
+              with open('videos.json', 'r') as f:
+                  data = json.load(f)
+                  count = data.get('total_videos', 0)
+              
+              message = f"✅ Daily scrape complete!\n📺 Found {count} relevant videos\n\nOpen dashboard to approve content."
+              
+              url = f"https://api.telegram.org/bot${{ secrets.TELEGRAM_TOKEN }}/sendMessage"
+              payload = {
+                  "chat_id": "${{ secrets.TELEGRAM_CHAT_ID }}",
+                  "text": message,
+                  "parse_mode": "HTML"
+              }
+              requests.post(url, json=payload)
+          except Exception as e:
+              print(f"Telegram error: {e}")
+          EOF

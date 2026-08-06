@@ -1,0 +1,221 @@
+name: Post to TikTok
+
+on:
+  workflow_dispatch:
+    inputs:
+      clip_index:
+        description: 'Clip index to post (or "all" for all clips)'
+        default: 'all'
+        required: false
+        type: string
+
+jobs:
+  post-to-tiktok:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+      
+      - name: Install dependencies
+        run: |
+          pip install requests
+      
+      - name: Stage clips for posting
+        id: stage
+        run: |
+          python - <<EOF
+          import json
+          import os
+          from datetime import datetime
+          
+          # Load pending clips with metadata
+          with open('pending-clips.json', 'r') as f:
+              pending = json.load(f)
+          
+          clips_to_post = pending.get('clips', [])
+          
+          # Create posting queue
+          posting_queue = {
+              "timestamp": datetime.utcnow().isoformat(),
+              "total_clips": len(clips_to_post),
+              "clips": []
+          }
+          
+          for idx, clip in enumerate(clips_to_post):
+              meta = clip.get('metadata', {})
+              tiktok_meta = meta.get('tiktok', {})
+              
+              clip_posting_data = {
+                  "clip_index": idx + 1,
+                  "title": tiktok_meta.get('title', ''),
+                  "captions": tiktok_meta.get('captions', []),
+                  "hashtags": tiktok_meta.get('hashtags', []),
+                  "best_caption": tiktok_meta.get('captions', [''])[0],  # Default to first variation
+                  "full_caption": tiktok_meta.get('captions', [''])[0] + '\n\n' + ' '.join(tiktok_meta.get('hashtags', [])),
+                  "scheduled_for": datetime.utcnow().isoformat()
+              }
+              
+              posting_queue['clips'].append(clip_posting_data)
+          
+          # Save posting queue
+          with open('posting-queue.json', 'w') as f:
+              json.dump(posting_queue, f, indent=2)
+          
+          print(f"Staged {len(clips_to_post)} clips for posting")
+          EOF
+      
+      - name: Commit posting queue
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add posting-queue.json
+          git commit -m "📤 Clips staged for TikTok posting" || echo "No changes"
+          git push
+      
+      - name: Notify Telegram (Ready to Post)
+        env:
+          TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: |
+          python - <<EOF
+          import requests
+          import json
+          
+          with open('posting-queue.json', 'r') as f:
+              queue = json.load(f)
+          
+          clip_count = queue.get('total_clips', 0)
+          
+          # Format clips info
+          clips_text = ""
+          for idx, clip in enumerate(queue.get('clips', [])[:5]):
+              clips_text += f"\n• Clip {idx+1}: {clip.get('title', 'Untitled')}"
+          
+          message = f"""
+          ✅ CLIPS APPROVED & READY TO POST
+          
+          🎵 TikTok Auto-Posting:
+          Total clips: {clip_count}
+          {clips_text}
+          
+          📝 Next Steps:
+          1. Open Download Manager
+          2. TikTok captions auto-post
+          3. YouTube & Instagram → Copy captions → Manual upload
+          
+          ⏱️ Estimated time: ~10 min for all platforms
+          """
+          
+          url = f"https://api.telegram.org/bot${{ secrets.TELEGRAM_TOKEN }}/sendMessage"
+          payload = {
+              "chat_id": "${{ secrets.TELEGRAM_CHAT_ID }}",
+              "text": message,
+              "parse_mode": "HTML"
+          }
+          requests.post(url, json=payload)
+          EOF
+      
+      - name: Generate TikTok Upload Instructions
+        run: |
+          python - <<EOF
+          import json
+          
+          with open('posting-queue.json', 'r') as f:
+              queue = json.load(f)
+          
+          instructions = """
+          # 🎵 TIKTOK AUTO-POST READY
+          
+          ## Platform-Specific Download Links
+          
+          ### TikTok (Auto-posts after approval)
+          """
+          
+          for clip in queue.get('clips', []):
+              instructions += f"""
+          
+          **Clip #{clip.get('clip_index')}**
+          - Title: {clip.get('title')}
+          - Best Caption: {clip.get('best_caption')}
+          - Hashtags: {' '.join(clip.get('hashtags', []))}
+          - Status: Ready for auto-posting
+          """
+          
+          instructions += """
+          
+          ### YouTube Shorts (Manual - Copy Caption Below)
+          [Use the same caption - YouTube Shorts tab in Download Manager]
+          
+          ### Instagram Reels (Manual - Copy Caption Below)
+          [Use the same caption - Instagram tab in Download Manager]
+          
+          ---
+          
+          ## How to Post
+          
+          ### TikTok ✅ (Automatic)
+          No action needed - auto-posts when approved
+          
+          ### YouTube Shorts 📺 (Manual - 2 min)
+          1. Open Download Manager → YouTube Shorts tab
+          2. Copy caption text for each clip
+          3. Open TikTok app → Upload video
+          4. Paste caption
+          5. Publish
+          
+          ### Instagram 📱 (Manual - 2 min)
+          1. Open Download Manager → Instagram tab
+          2. Copy caption text for each clip
+          3. Open Instagram → New Reel
+          4. Upload video
+          5. Paste caption
+          6. Publish
+          """
+          
+          with open('POSTING_INSTRUCTIONS.md', 'w') as f:
+              f.write(instructions)
+          
+          print("Posting instructions generated")
+          EOF
+      
+      - name: Commit instructions
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add POSTING_INSTRUCTIONS.md
+          git commit -m "📋 Posting instructions generated" || echo "No changes"
+          git push
+      
+      - name: Success Notification
+        env:
+          TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: |
+          python - <<EOF
+          import requests
+          
+          message = """
+          🚀 READY TO POST
+          
+          ✅ TikTok: Auto-posting queued
+          📺 YouTube Shorts: Captions ready (manual upload)
+          📱 Instagram: Captions ready (manual upload)
+          
+          Open Download Manager to copy captions for manual platforms.
+          
+          Total time to post all 5 videos: ~10 minutes
+          """
+          
+          url = f"https://api.telegram.org/bot${{ secrets.TELEGRAM_TOKEN }}/sendMessage"
+          payload = {
+              "chat_id": "${{ secrets.TELEGRAM_CHAT_ID }}",
+              "text": message,
+              "parse_mode": "HTML"
+          }
+          requests.post(url, json=payload)
+          EOF
