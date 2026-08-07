@@ -161,7 +161,7 @@ class YouTubeScraper:
                 print(f"  Could not find channel")
         
         # Sort by relevance and publish date
-        all_videos.sort(key=lambda x: (-x["relevance_score"], -datetime.fromisoformat(x["published_at"]).timestamp()))
+        all_videos.sort(key=lambda x: (-x["relevance_score"], -datetime.fromisoformat(x["published_at"].replace("Z", "+00:00")).timestamp()))
         
         return all_videos
 
@@ -185,7 +185,7 @@ class YouTubeScraper:
         
         # Convert back to list and sort
         videos_list = list(existing.values())
-        videos_list.sort(key=lambda x: (-x["relevance_score"], -datetime.fromisoformat(x["published_at"]).timestamp()))
+        videos_list.sort(key=lambda x: (-x["relevance_score"], -datetime.fromisoformat(x["published_at"].replace("Z", "+00:00")).timestamp()))
         
         output_data = {
             "last_updated": datetime.utcnow().isoformat(),
