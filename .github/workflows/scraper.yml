@@ -1,201 +1,61 @@
-#!/usr/bin/env python3
-"""
-YouTube Channel Scraper for UNASHAMED - FIXED VERSION
-Monitors specified channels for new uploads daily
-Stores results in JSON for mobile dashboard consumption
-"""
+name: Daily YouTube Scrape
 
-import json
-import os
-from datetime import datetime, timedelta
-import requests
-from typing import List, Dict
+on:
+  schedule:
+    - cron: '0 8 * * *'
+  workflow_dispatch:
 
-# YouTube channels to monitor (with their actual channel IDs)
-CHANNELS = {
-    "2819Church": "UCwkH81Kx8UtHrXUFS_s1T2g",
-    "BryceCrawford": "UCrE9Wh6Z_Zs0fgVAyp-RGng",
-    "JonathanConricusOfficial": "UCwkH81Kx8UtHrXUFS_s1T2g",
-    "CBNnewsonline": "UCG0r_E_-R6K4eB7B5BzLWcg",
-    "GodLogicApologetics": "UCnM36TX5HqI_Oa8_VYmAh5g",
-    "WesHuff": "UCvV36TX5HqI_Oa8_VYmAh5g",
-    "InspiringPhilosophy": "UCvV36TX5HqI_Oa8_VYmAh5g",
-    "CrossExamined": "UCvV36TX5HqI_Oa8_VYmAh5g",
-    "RealCharlieKirk": "UCvV36TX5HqI_Oa8_VYmAh5g",
-    "JohnLennox": "UCvV36TX5HqI_Oa8_VYmAh5g",
-}
-
-# Keywords to filter for high-relevance content
-KEYWORDS = [
-    "romans 1:16",
-    "not ashamed",
-    "gospel",
-    "end times",
-    "eschatology",
-    "christ return",
-    "second coming",
-    "rapture",
-    "tribulation",
-    "prophecy",
-    "unashamed",
-]
-
-class YouTubeScraper:
-    def __init__(self, api_key: str):
-        self.api_key = api_key
-        self.base_url = "https://www.googleapis.com/youtube/v3"
-        self.session = requests.Session()
-        self.session.timeout = 10
-
-    def get_recent_uploads(self, channel_id: str, channel_name: str, days: int = 7) -> List[Dict]:
-        """Get recent uploads from a channel (last N days)"""
-        url = f"{self.base_url}/search"
-        published_after = (datetime.utcnow() - timedelta(days=days)).isoformat() + "Z"
-        
-        params = {
-            "part": "snippet",
-            "channelId": channel_id,
-            "maxResults": 10,
-            "order": "date",
-            "publishedAfter": published_after,
-            "type": "video",
-            "key": self.api_key,
-        }
-        
-        videos = []
-        try:
-            response = self.session.get(url, params=params, timeout=10)
-            response.raise_for_status()
-            data = response.json()
-            
-            if "error" in data:
-                print(f"API Error for {channel_name}: {data['error'].get('message', 'Unknown error')}")
-                return videos
-            
-            for item in data.get("items", []):
-                try:
-                    snippet = item["snippet"]
-                    video_id = item["id"]["videoId"]
-                    title = snippet["title"]
-                    description = snippet["description"]
-                    published_at = snippet["publishedAt"]
-                    
-                    # Check if video matches keywords
-                    relevance_score = self._calculate_relevance(title + " " + description)
-                    
-                    if relevance_score > 0:  # Only include if matches keywords
-                        videos.append({
-                            "video_id": video_id,
-                            "channel_name": channel_name,
-                            "channel_id": channel_id,
-                            "title": title,
-                            "description": description,
-                            "published_at": published_at,
-                            "url": f"https://www.youtube.com/watch?v={video_id}",
-                            "relevance_score": relevance_score,
-                            "status": "pending",
-                            "discovered_at": datetime.utcnow().isoformat(),
-                        })
-                except KeyError as e:
-                    print(f"Error parsing video item: {e}")
-                    continue
-                    
-        except requests.exceptions.Timeout:
-            print(f"Timeout fetching uploads for {channel_name}")
-        except requests.exceptions.RequestException as e:
-            print(f"Request error for {channel_name}: {e}")
-        except json.JSONDecodeError:
-            print(f"JSON decode error for {channel_name}")
-        except Exception as e:
-            print(f"Unexpected error fetching uploads for {channel_name}: {e}")
-        
-        return videos
-
-    def _calculate_relevance(self, text: str) -> float:
-        """Calculate relevance score based on keyword matches"""
-        text_lower = text.lower()
-        score = 0
-        
-        for keyword in KEYWORDS:
-            if keyword in text_lower:
-                score += 1
-        
-        return score
-
-    def scrape_all_channels(self) -> List[Dict]:
-        """Scrape all channels and return combined results"""
-        all_videos = []
-        
-        print(f"Starting scrape of {len(CHANNELS)} channels...")
-        
-        for channel_name, channel_id in CHANNELS.items():
-            print(f"Scraping {channel_name}...")
-            try:
-                videos = self.get_recent_uploads(channel_id, channel_name)
-                all_videos.extend(videos)
-                print(f"  Found {len(videos)} relevant videos")
-            except Exception as e:
-                print(f"  Error scraping {channel_name}: {e}")
-        
-        # Sort by relevance and publish date
-        all_videos.sort(key=lambda x: (-x["relevance_score"], -datetime.fromisoformat(x["published_at"]).timestamp()))
-        
-        return all_videos
-
-    def save_results(self, videos: List[Dict], output_file: str = "videos.json"):
-        """Save results to JSON file"""
-        # Load existing videos to avoid duplicates
-        existing = {}
-        if os.path.exists(output_file):
-            try:
-                with open(output_file, "r") as f:
-                    existing_data = json.load(f)
-                    for video in existing_data.get("videos", []):
-                        existing[video["video_id"]] = video
-            except Exception as e:
-                print(f"Error loading existing videos: {e}")
-        
-        # Add new videos
-        for video in videos:
-            if video["video_id"] not in existing:
-                existing[video["video_id"]] = video
-        
-        # Convert back to list and sort
-        videos_list = list(existing.values())
-        videos_list.sort(key=lambda x: (-x["relevance_score"], -datetime.fromisoformat(x["published_at"]).timestamp()))
-        
-        output_data = {
-            "last_updated": datetime.utcnow().isoformat(),
-            "total_videos": len(videos_list),
-            "videos": videos_list[:100],  # Keep last 100
-        }
-        
-        try:
-            with open(output_file, "w") as f:
-                json.dump(output_data, f, indent=2)
-            print(f"✅ Saved {len(videos_list)} videos to {output_file}")
-        except Exception as e:
-            print(f"❌ Error saving results: {e}")
-            raise
-
-def main():
-    """Main execution"""
-    api_key = os.getenv("YOUTUBE_API_KEY")
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
     
-    if not api_key:
-        print("❌ ERROR: YOUTUBE_API_KEY environment variable not set")
-        raise ValueError("YOUTUBE_API_KEY not found")
-    
-    try:
-        print("🚀 Starting YouTube scraper...")
-        scraper = YouTubeScraper(api_key)
-        videos = scraper.scrape_all_channels()
-        print(f"📊 Found {len(videos)} total relevant videos")
-        scraper.save_results(videos)
-        print("✅ Scrape complete!")
-    except Exception as e:
-        print(f"❌ Scrape failed: {e}")
-        raise
-
-if __name__ == "__main__":
-    main()
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+      
+      - name: Install dependencies
+        run: |
+          pip install requests
+      
+      - name: Run scraper
+        env:
+          YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
+        run: python scraper.py
+      
+      - name: Commit and push results
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add videos.json
+          git commit -m "🎬 Daily YouTube scrape - $(date)" || echo "No changes"
+          git push
+      
+      - name: Notify Telegram
+        env:
+          TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: |
+          python - <<EOF
+          import requests
+          import json
+          
+          try:
+              with open('videos.json', 'r') as f:
+                  data = json.load(f)
+                  count = data.get('total_videos', 0)
+              
+              message = f"✅ Daily scrape complete!\n📺 Found {count} relevant videos"
+              
+              url = f"https://api.telegram.org/bot${{ secrets.TELEGRAM_TOKEN }}/sendMessage"
+              payload = {
+                  "chat_id": "${{ secrets.TELEGRAM_CHAT_ID }}",
+                  "text": message
+              }
+              requests.post(url, json=payload)
+          except Exception as e:
+              print(f"Telegram error: {e}")
+          EOF
