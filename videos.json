@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-08-07T10:38:58.615163",
-  "total_videos": 4,
+  "last_updated": "2026-08-08T09:58:59.024132",
+  "total_videos": 6,
   "videos": [
     {
       "video_id": "w00GpWXuLtU",
@@ -13,6 +13,30 @@
       "relevance_score": 2,
       "status": "pending",
       "discovered_at": "2026-08-07T10:38:51.514672"
+    },
+    {
+      "video_id": "g6Da3f1TuFA",
+      "channel_name": "CBNnewsonline",
+      "channel_id": "UCYI_ychRnL7sJrG6PUSBpQA",
+      "title": "Ex-Muslims Take the Gospel to Dearborn\u2019s Islamic Parade",
+      "description": "By now, you've probably seen videos of the massive Muslim parade that took place in Dearborn, Michigan, which has left many ...",
+      "published_at": "2026-08-07T22:26:42Z",
+      "url": "https://www.youtube.com/watch?v=g6Da3f1TuFA",
+      "relevance_score": 1,
+      "status": "pending",
+      "discovered_at": "2026-08-08T09:58:48.640060"
+    },
+    {
+      "video_id": "SMHcBK011PQ",
+      "channel_name": "CBNnewsonline",
+      "channel_id": "UCYI_ychRnL7sJrG6PUSBpQA",
+      "title": "Iranian Horror, Persecution Rage as New AI Platform Covertly Delivers the Gospel",
+      "description": "Kairos is a powerful new Christian AI tool created by Iran Alive Ministries to help people in one of the world's most restricted ...",
+      "published_at": "2026-08-07T21:52:48Z",
+      "url": "https://www.youtube.com/watch?v=SMHcBK011PQ",
+      "relevance_score": 1,
+      "status": "pending",
+      "discovered_at": "2026-08-08T09:58:48.640078"
     },
     {
       "video_id": "J9gyERS0aLo",
