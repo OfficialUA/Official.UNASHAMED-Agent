@@ -172,14 +172,14 @@ class YouTubeScraper:
         return merged
 
     def get_recent_uploads(self, channel_id: str, channel_name: str, days: int = 365) -> List[Dict]:
-        """Get recent uploads from a channel (last N days)"""
+        """Get recent uploads from a channel and search transcripts for keywords"""
         url = f"{self.base_url}/search"
         published_after = (datetime.utcnow() - timedelta(days=days)).isoformat() + "Z"
         
         params = {
             "part": "snippet",
             "channelId": channel_id,
-            "maxResults": 15,
+            "maxResults": 50,  # Increased to scan more videos
             "order": "date",
             "publishedAfter": published_after,
             "type": "video",
@@ -198,10 +198,27 @@ class YouTubeScraper:
                 description = snippet["description"]
                 published_at = snippet["publishedAt"]
                 
-                # Check if video matches keywords
-                relevance_score = self._calculate_relevance(title + " " + description)
+                # Calculate relevance from title/description
+                title_desc_relevance = self._calculate_relevance(title + " " + description)
                 
-                if relevance_score > 0:  # Only include if matches keywords
+                # Get transcript and check for keywords
+                transcript_relevance = 0
+                clip_markers = []
+                
+                if TRANSCRIPT_AVAILABLE:
+                    print(f"    Fetching transcript for: {title[:50]}...")
+                    transcript = self.get_transcript(video_id)
+                    if transcript:
+                        markers = self.find_keyword_timestamps(transcript)
+                        if markers:
+                            transcript_relevance = len(markers)
+                            clip_markers = markers
+                            print(f"    Found {len(markers)} clip points in transcript")
+                
+                # Include if matches either title/description OR transcript
+                total_relevance = title_desc_relevance + transcript_relevance
+                
+                if total_relevance > 0:
                     video_data = {
                         "video_id": video_id,
                         "channel_name": channel_name,
@@ -210,22 +227,11 @@ class YouTubeScraper:
                         "description": description,
                         "published_at": published_at,
                         "url": f"https://www.youtube.com/watch?v={video_id}",
-                        "relevance_score": relevance_score,
+                        "relevance_score": total_relevance,
                         "status": "pending",
                         "discovered_at": datetime.utcnow().isoformat(),
-                        "clip_markers": [],  # Will populate with transcript data
+                        "clip_markers": clip_markers,
                     }
-                    
-                    # Try to get transcript and find timestamps
-                    if TRANSCRIPT_AVAILABLE:
-                        print(f"    Fetching transcript for: {title[:50]}...")
-                        transcript = self.get_transcript(video_id)
-                        if transcript:
-                            markers = self.find_keyword_timestamps(transcript)
-                            if markers:
-                                video_data["clip_markers"] = markers
-                                print(f"    Found {len(markers)} clip points")
-                    
                     videos.append(video_data)
         except Exception as e:
             print(f"Error fetching uploads for {channel_name}: {e}")
