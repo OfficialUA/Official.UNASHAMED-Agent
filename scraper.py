@@ -165,7 +165,7 @@ class YouTubeScraper:
         secs = int(seconds % 60)
         return f"{mins}:{secs:02d}"
 
-    def get_recent_uploads(self, channel_id: str, channel_name: str, days: int = 7) -> List[Dict]:
+    def get_recent_uploads(self, channel_id: str, channel_name: str, days: int = 365) -> List[Dict]:
         """Get recent uploads from a channel (last N days)"""
         url = f"{self.base_url}/search"
         published_after = (datetime.utcnow() - timedelta(days=days)).isoformat() + "Z"
