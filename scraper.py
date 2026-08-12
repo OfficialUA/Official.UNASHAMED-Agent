@@ -297,7 +297,7 @@ class YouTubeScraper:
 def main():
     """Main execution"""
     api_key = os.getenv("YOUTUBE_API_KEY")
-    
+    print(f"DEBUG: TRANSCRIPT_AVAILABLE = {TRANSCRIPT_AVAILABLE}")
     if not api_key:
         raise ValueError("YOUTUBE_API_KEY environment variable not set")
     
