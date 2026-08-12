@@ -42,20 +42,52 @@ jobs:
           python - <<EOF
           import requests
           import json
+          import sys
           
+          # Read the scraped data
           try:
               with open('videos.json', 'r') as f:
                   data = json.load(f)
                   count = data.get('total_videos', 0)
-              
-              message = f"✅ Daily scrape complete!\n📺 Found {count} relevant videos"
-              
-              url = f"https://api.telegram.org/bot${{ secrets.TELEGRAM_TOKEN }}/sendMessage"
-              payload = {
-                  "chat_id": "${{ secrets.TELEGRAM_CHAT_ID }}",
-                  "text": message
-              }
-              requests.post(url, json=payload)
           except Exception as e:
-              print(f"Telegram error: {e}")
+              print(f"Error reading videos.json: {e}")
+              sys.exit(1)
+          
+          # Prepare message
+          message = f"✅ Daily scrape complete!\n📺 Found {count} relevant videos"
+          
+          # Send to Telegram
+          bot_token = "${{ secrets.TELEGRAM_TOKEN }}"
+          chat_id = "${{ secrets.TELEGRAM_CHAT_ID }}"
+          
+          if not bot_token or not chat_id:
+              print("ERROR: TELEGRAM_TOKEN or TELEGRAM_CHAT_ID not set")
+              sys.exit(1)
+          
+          url = f"https://api.telegram.org/bot{bot_token}/sendMessage"
+          payload = {
+              "chat_id": chat_id,
+              "text": message,
+              "parse_mode": "HTML"
+          }
+          
+          print(f"Sending to Telegram...")
+          print(f"Chat ID: {chat_id}")
+          print(f"Message: {message}")
+          
+          response = requests.post(url, json=payload, timeout=10)
+          
+          print(f"Response status: {response.status_code}")
+          print(f"Response body: {response.text}")
+          
+          if response.status_code != 200:
+              print(f"ERROR: Telegram API returned {response.status_code}")
+              sys.exit(1)
+          
+          result = response.json()
+          if result.get('ok'):
+              print("✅ Telegram notification sent successfully")
+          else:
+              print(f"ERROR: {result.get('description', 'Unknown error')}")
+              sys.exit(1)
           EOF
