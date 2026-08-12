@@ -10,8 +10,7 @@ import json
 import os
 from datetime import datetime, timedelta
 import requests
-from typing import List, Dict, Tuple
-from urllib.parse import urlparse, parse_qs
+from typing import List, Dict
 
 # Try to import youtube-transcript-api, fallback gracefully
 try:
@@ -21,7 +20,7 @@ except ImportError:
     TRANSCRIPT_AVAILABLE = False
     print("Warning: youtube-transcript-api not installed. Install with: pip install youtube-transcript-api")
 
-# YouTube channels to monitor
+# YouTube channels to monitor (using direct channel IDs)
 CHANNELS = [
     "UC6T34aIevA1qW_RjE_Xl28w",  # 2819 Church
     "UCX9K37bE2gGf9d3b2W4hZlw",  # Bryce Crawford
@@ -55,17 +54,50 @@ CHANNELS = [
 
 # Keywords to filter for high-relevance content
 KEYWORDS = [
+    # Core Theme & Scripture
     "romans 1:16",
+    "romans 1 16",
     "not ashamed",
-    "gospel",
-    "end times",
-    "eschatology",
-    "christ return",
-    "second coming",
-    "rapture",
-    "tribulation",
-    "prophecy",
+    "not ashamed of the gospel",
     "unashamed",
+    "unashamed of the gospel",
+    "gospel",
+    "gospel message",
+    "boldness for christ",
+    "uncompromising faith",
+    
+    # End Times & Eschatology
+    "end times",
+    "end times prophecy",
+    "eschatology",
+    "last days",
+    "christ return",
+    "return of jesus",
+    "second coming",
+    "second coming of christ",
+    "rapture",
+    "rapture of the church",
+    "tribulation",
+    "great tribulation",
+    "day of the lord",
+    "blessed hope",
+    
+    # Prophecy & Biblical Books
+    "prophecy",
+    "bible prophecy",
+    "bible prophecy update",
+    "signs of the times",
+    "signs of the end times",
+    "book of revelation",
+    "revelation prophecy",
+    "antichrist",
+    "mark of the beast",
+    "third temple",
+    
+    # Media Modifiers
+    "prophecy update",
+    "end times sermon",
+    "revelation bible study",
 ]
 
 class YouTubeScraper:
@@ -73,26 +105,6 @@ class YouTubeScraper:
         self.api_key = api_key
         self.base_url = "https://www.googleapis.com/youtube/v3"
         self.videos = []
-        self.channels_data = {}
-
-    def get_channel_id(self, channel_name: str) -> str:
-        """Get YouTube channel ID from channel name"""
-        url = f"{self.base_url}/search"
-        params = {
-            "part": "snippet",
-            "q": channel_name,
-            "type": "channel",
-            "key": self.api_key,
-            "maxResults": 1,
-        }
-        try:
-            response = requests.get(url, params=params, timeout=10)
-            data = response.json()
-            if data.get("items"):
-                return data["items"][0]["snippet"]["channelId"]
-        except Exception as e:
-            print(f"Error getting channel ID for {channel_name}: {e}")
-        return None
 
     def get_transcript(self, video_id: str) -> List[Dict]:
         """Extract transcript from a YouTube video"""
@@ -158,12 +170,6 @@ class YouTubeScraper:
                 merged.append(seg)
         
         return merged
-
-    def format_timestamp(self, seconds: float) -> str:
-        """Convert seconds to MM:SS format"""
-        mins = int(seconds // 60)
-        secs = int(seconds % 60)
-        return f"{mins}:{secs:02d}"
 
     def get_recent_uploads(self, channel_id: str, channel_name: str, days: int = 365) -> List[Dict]:
         """Get recent uploads from a channel (last N days)"""
@@ -243,16 +249,11 @@ class YouTubeScraper:
         
         print(f"Starting scrape of {len(CHANNELS)} channels...")
         
-        for channel_name in CHANNELS:
-            print(f"Scraping {channel_name}...")
-            channel_id = self.get_channel_id(channel_name)
-            
-            if channel_id:
-                videos = self.get_recent_uploads(channel_id, channel_name)
-                all_videos.extend(videos)
-                print(f"  Found {len(videos)} relevant videos")
-            else:
-                print(f"  Could not find channel")
+        for channel_id in CHANNELS:
+            print(f"Scraping {channel_id}...")
+            videos = self.get_recent_uploads(channel_id, channel_id)
+            all_videos.extend(videos)
+            print(f"  Found {len(videos)} relevant videos")
         
         # Sort by relevance and publish date
         all_videos.sort(key=lambda x: (-x["relevance_score"], -datetime.fromisoformat(x["published_at"].replace("Z", "+00:00")).timestamp()))
@@ -298,6 +299,7 @@ def main():
     """Main execution"""
     api_key = os.getenv("YOUTUBE_API_KEY")
     print(f"DEBUG: TRANSCRIPT_AVAILABLE = {TRANSCRIPT_AVAILABLE}")
+    
     if not api_key:
         raise ValueError("YOUTUBE_API_KEY environment variable not set")
     
