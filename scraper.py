@@ -2,6 +2,7 @@
 """
 YouTube Channel Scraper for UNASHAMED
 Monitors specified channels for new uploads daily
+Extracts transcripts and finds keyword timestamps for fast clipping
 Stores results in JSON for mobile dashboard consumption
 """
 
@@ -9,7 +10,16 @@ import json
 import os
 from datetime import datetime, timedelta
 import requests
-from typing import List, Dict
+from typing import List, Dict, Tuple
+from urllib.parse import urlparse, parse_qs
+
+# Try to import youtube-transcript-api, fallback gracefully
+try:
+    from youtube_transcript_api import YouTubeTranscriptApi
+    TRANSCRIPT_AVAILABLE = True
+except ImportError:
+    TRANSCRIPT_AVAILABLE = False
+    print("Warning: youtube-transcript-api not installed. Install with: pip install youtube-transcript-api")
 
 # YouTube channels to monitor
 CHANNELS = [
@@ -84,6 +94,77 @@ class YouTubeScraper:
             print(f"Error getting channel ID for {channel_name}: {e}")
         return None
 
+    def get_transcript(self, video_id: str) -> List[Dict]:
+        """Extract transcript from a YouTube video"""
+        if not TRANSCRIPT_AVAILABLE:
+            return []
+        
+        try:
+            transcript = YouTubeTranscriptApi.get_transcript(video_id)
+            return transcript
+        except Exception as e:
+            print(f"  Could not get transcript for {video_id}: {e}")
+            return []
+
+    def find_keyword_timestamps(self, transcript: List[Dict]) -> List[Dict]:
+        """
+        Find timestamps where keywords appear in transcript
+        Returns list of segments with start/end times and matched keywords
+        """
+        if not transcript:
+            return []
+        
+        segments = []
+        keywords_lower = [kw.lower() for kw in KEYWORDS]
+        
+        for entry in transcript:
+            text_lower = entry['text'].lower()
+            start_time = entry['start']
+            
+            # Check if any keyword is in this snippet
+            for i, keyword in enumerate(keywords_lower):
+                if keyword in text_lower:
+                    # Find the end time (next entry or +5 seconds if last)
+                    end_time = start_time + 5
+                    
+                    segments.append({
+                        "keyword": KEYWORDS[i],  # Use original capitalization
+                        "start_time": round(start_time, 2),
+                        "end_time": round(end_time, 2),
+                        "text_snippet": entry['text'][:100],  # First 100 chars
+                    })
+        
+        # Remove duplicates and sort by start time
+        unique_segments = []
+        seen = set()
+        for seg in segments:
+            key = (seg['start_time'], seg['keyword'])
+            if key not in seen:
+                unique_segments.append(seg)
+                seen.add(key)
+        
+        unique_segments.sort(key=lambda x: x['start_time'])
+        
+        # Merge nearby segments (within 10 seconds)
+        merged = []
+        for seg in unique_segments:
+            if merged and seg['start_time'] - merged[-1]['end_time'] < 10:
+                # Extend the previous segment
+                merged[-1]['end_time'] = max(merged[-1]['end_time'], seg['end_time'])
+                merged[-1]['keywords'] = list(set(merged[-1].get('keywords', []) + [seg['keyword']]))
+            else:
+                seg['keywords'] = [seg['keyword']]
+                del seg['keyword']  # Remove single keyword, use keywords list
+                merged.append(seg)
+        
+        return merged
+
+    def format_timestamp(self, seconds: float) -> str:
+        """Convert seconds to MM:SS format"""
+        mins = int(seconds // 60)
+        secs = int(seconds % 60)
+        return f"{mins}:{secs:02d}"
+
     def get_recent_uploads(self, channel_id: str, channel_name: str, days: int = 7) -> List[Dict]:
         """Get recent uploads from a channel (last N days)"""
         url = f"{self.base_url}/search"
@@ -115,7 +196,7 @@ class YouTubeScraper:
                 relevance_score = self._calculate_relevance(title + " " + description)
                 
                 if relevance_score > 0:  # Only include if matches keywords
-                    videos.append({
+                    video_data = {
                         "video_id": video_id,
                         "channel_name": channel_name,
                         "channel_id": channel_id,
@@ -126,7 +207,20 @@ class YouTubeScraper:
                         "relevance_score": relevance_score,
                         "status": "pending",
                         "discovered_at": datetime.utcnow().isoformat(),
-                    })
+                        "clip_markers": [],  # Will populate with transcript data
+                    }
+                    
+                    # Try to get transcript and find timestamps
+                    if TRANSCRIPT_AVAILABLE:
+                        print(f"    Fetching transcript for: {title[:50]}...")
+                        transcript = self.get_transcript(video_id)
+                        if transcript:
+                            markers = self.find_keyword_timestamps(transcript)
+                            if markers:
+                                video_data["clip_markers"] = markers
+                                print(f"    Found {len(markers)} clip points")
+                    
+                    videos.append(video_data)
         except Exception as e:
             print(f"Error fetching uploads for {channel_name}: {e}")
         
@@ -217,3 +311,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
