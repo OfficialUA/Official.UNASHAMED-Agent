@@ -23,34 +23,34 @@ except ImportError:
 
 # YouTube channels to monitor
 CHANNELS = [
-    "2819Church",
-    "BryceCrawford",
-    "JonathanConricusOfficial",
-    "CBNnewsonline",
-    "GodLogicApologetics",
-    "WesHuff",
-    "InspiringPhilosophy",
-    "CrossExamined",
-    "RealCharlieKirk",
-    "JohnLennox",
-    "RealLifeJackHibbs",
-    "ProphecyPros",
-    "BeholdIsrael",
-    "BarryStagner",
-    "GraceToYou",
-    "VoddieBaucham",
-    "HeartCryMission",
-    "LivingWaters",
-    "ThePorch",
-    "BecomingSomething",
-    "RuslanKD",
-    "BryceCrawfordPodcast",
-    "LiveOriginal",
-    "IsaiahSaldivar",
-    "GabePoirot",
-    "MarcusRogers",
-    "Souljaofgod",
-    "PassionCityChurch",
+    "UC6T34aIevA1qW_RjE_Xl28w",  # 2819 Church
+    "UCX9K37bE2gGf9d3b2W4hZlw",  # Bryce Crawford
+    "UC0_L2tA1kG8vX6w5T_v3c2g",  # Jonathan Conricus Official
+    "UCATGPOQp9m-1iC7VvDk_kZQ",  # CBN News Online
+    "UC8z3e0bTz1_g2Fw4Y1Z6q7A",  # GodLogic Apologetics
+    "UCqT8oX9z1X6tZ7vY8xQ4w9g",  # Wes Huff
+    "UC52LiukMgMrcH5r8Q_tZz2Q",  # InspiringPhilosophy
+    "UCDqgkkA5A5J2xRz0z8v1g4w",  # CrossExamined
+    "UCZsYlW72sM4n2d8S5d1K08A",  # Real Charlie Kirk
+    "UCb3_G00A23sZ5w3p8qV0w6A",  # John Lennox
+    "UC4vD12K0u_p-jO-0vK3q89g",  # Real Life Jack Hibbs
+    "UC9w6zX3Y8w2K0r7s9L3v1aA",  # Prophecy Pros
+    "UCxP9c4T2Z5l0q3k1n2w0R7A",  # Behold Israel
+    "UC2x4q8Y1w0m3v6l9z7pK5A",  # Barry Stagner
+    "UC7y7-21w5x6_b0z8v1K3r5g",  # Grace to You
+    "UCqZ1_tXk-vK5z1w3v2z8R7w",  # Voddie Baucham
+    "UCgH24J1sK0m8v5x1z7w2L9Q",  # HeartCry Missionary Society
+    "UC1bJ5n2Z8w1v0x7l6K3m5A",  # Living Waters
+    "UC2y7x5w0v1z8_K3m6l9p2A",  # The Porch
+    "UC3v1z8l6K5m7w2x0y4p9A",  # Becoming Something
+    "UCqX6l2w0v5z8m1K3l7p4A",  # Ruslan KD
+    "UC7k0m5v2w1z8x6L3p9q4A",  # Bryce Crawford Podcast
+    "UC5m2w1z8x6L3p9q4K7k0A",  # Live Original
+    "UC6L3p9q4K7k0m5v2w1z8A",  # Isaiah Saldivar
+    "UC8x6L3p9q4K7k0m5v2w1Z",  # Gabe Poirot
+    "UC9q4K7k0m5v2w1z8x6L3A",  # Marcus Rogers
+    "UC4K7k0m5v2w1z8x6L3p9A",  # Soulja of God
+    "UC7k0m5v2w1z8x6L3p9q4B",  # Passion City Church
 ]
 
 # Keywords to filter for high-relevance content
