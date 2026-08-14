@@ -50,6 +50,7 @@ CHANNELS = [
     "UC9q4K7k0m5v2w1z8x6L3A",  # Marcus Rogers
     "UC4K7k0m5v2w1z8x6L3p9A",  # Soulja of God
     "UC7k0m5v2w1z8x6L3p9q4B",  # Passion City Church
+    "UCkz3m787ygph7Uvjxzngl-g" # J.D. Farag
 ]
 
 # Keywords to filter for high-relevance content
