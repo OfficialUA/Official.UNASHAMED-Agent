@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-08-15T08:59:57.374841",
-  "total_videos": 28,
+  "last_updated": "2026-08-16T09:01:02.874665",
+  "total_videos": 30,
   "videos": [
     {
       "video_id": "4O2z5DJ9c8c",
@@ -130,6 +130,19 @@
       "relevance_score": 4,
       "status": "pending",
       "discovered_at": "2026-08-14T11:08:23.124678",
+      "clip_markers": []
+    },
+    {
+      "video_id": "I7PIJ4ANYt4",
+      "channel_name": "UCkz3m787ygph7Uvjxzngl-g",
+      "channel_id": "UCkz3m787ygph7Uvjxzngl-g",
+      "title": "Bible Prophecy Update, The Brain Technology And Bible Prophecy - Sunday, June 7th, 2026",
+      "description": "Pastor JD does a deep dive into today's brain technology and how it connects with last day's Bible prophecy. \"LIVESTREAMING ...",
+      "published_at": "2026-06-07T20:40:19Z",
+      "url": "https://www.youtube.com/watch?v=I7PIJ4ANYt4",
+      "relevance_score": 4,
+      "status": "pending",
+      "discovered_at": "2026-08-16T09:01:02.872892",
       "clip_markers": []
     },
     {
@@ -354,6 +367,19 @@
       "relevance_score": 1,
       "status": "pending",
       "discovered_at": "2026-08-14T11:08:23.124488",
+      "clip_markers": []
+    },
+    {
+      "video_id": "lPYhhPlveIY",
+      "channel_name": "UCkz3m787ygph7Uvjxzngl-g",
+      "channel_id": "UCkz3m787ygph7Uvjxzngl-g",
+      "title": "Pastor JD explains that the mystery of lawlessness is already at work",
+      "description": "Pastor JD explains that the mystery of lawlessness is already at work, but the Antichrist cannot be revealed until the Restrainer ...",
+      "published_at": "2026-06-03T22:37:18Z",
+      "url": "https://www.youtube.com/watch?v=lPYhhPlveIY",
+      "relevance_score": 1,
+      "status": "pending",
+      "discovered_at": "2026-08-16T09:01:02.872958",
       "clip_markers": []
     }
   ]
