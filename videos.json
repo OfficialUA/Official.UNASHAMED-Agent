@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-08-18T09:17:06.316348",
-  "total_videos": 30,
+  "last_updated": "2026-08-19T09:27:04.701603",
+  "total_videos": 31,
   "videos": [
     {
       "video_id": "4O2z5DJ9c8c",
@@ -219,6 +219,19 @@
       "relevance_score": 2,
       "status": "pending",
       "discovered_at": "2026-08-14T11:08:23.124583",
+      "clip_markers": []
+    },
+    {
+      "video_id": "pUQDTtB580M",
+      "channel_name": "UCkz3m787ygph7Uvjxzngl-g",
+      "channel_id": "UCkz3m787ygph7Uvjxzngl-g",
+      "title": "Pastor JD reminds us that we each have been given the mina of the Gospel of Jesus Christ",
+      "description": "Pastor JD reminds us that we each have been given the mina of the Gospel of Jesus Christ. What are you doing with it? Did you ...",
+      "published_at": "2026-08-18T23:17:46Z",
+      "url": "https://www.youtube.com/watch?v=pUQDTtB580M",
+      "relevance_score": 1,
+      "status": "pending",
+      "discovered_at": "2026-08-19T09:27:04.699470",
       "clip_markers": []
     },
     {
