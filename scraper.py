@@ -113,6 +113,18 @@ CLIP_PAD_AFTER = 30       # seconds of trailing context after the keyword hit
 MERGE_GAP_SECONDS = 10    # merge two hits into one clip if this close together
 MAX_CLIPS_PER_VIDEO = 4   # hard cap so one chatty video can't flood the queue
 
+# ---------------------------------------------------------------------------
+# Cloud transcript fetching toggle
+# GitHub Actions (and any cloud provider) gets IP-blocked by YouTube for
+# transcript requests — confirmed from a live run's logs, not a guess.
+# Defaults OFF so the Action doesn't burn ~20 minutes retrying calls that
+# will always fail. Transcript fetching (and clip_markers generation) now
+# happens locally instead — run fetch_transcripts_local.py on a home
+# connection. Only flip this on if you've set up a paid residential proxy
+# (see comments in get_transcript) and know what that costs.
+# ---------------------------------------------------------------------------
+FETCH_TRANSCRIPTS_IN_CLOUD = os.getenv("FETCH_TRANSCRIPTS_IN_CLOUD", "false").lower() == "true"
+
 
 class YouTubeScraper:
     def __init__(self, api_key: str):
@@ -121,13 +133,23 @@ class YouTubeScraper:
         self.videos = []
 
     def get_transcript(self, video_id: str) -> List[Dict]:
-        """Extract transcript from a YouTube video using the current (v1.0+) API."""
+        """
+        Extract transcript from a YouTube video using the current (v1.0+) API.
+
+        NOTE: This will reliably fail with an IpBlocked/RequestBlocked error when
+        run from GitHub Actions or any cloud provider IP — YouTube blocks
+        transcript requests from datacenter IPs categorically. This is not a
+        bug in this code; it's confirmed directly from a live run's logs.
+        The free/reliable fix is NOT to call this from cloud CI. Use
+        fetch_transcripts_local.py on a home/residential connection instead —
+        see that file for the actual transcript-fetching step.
+        """
         if not TRANSCRIPT_AVAILABLE:
             return []
         try:
             ytt_api = YouTubeTranscriptApi()
             fetched = ytt_api.fetch(video_id)
-            return fetched.to_raw_data()  # back to list-of-dicts format the rest of the code expects
+            return fetched.to_raw_data()
         except Exception as e:
             print(f"    Could not get transcript for {video_id}: {e}")
             return []
@@ -221,7 +243,7 @@ class YouTubeScraper:
                 transcript_relevance = 0
                 clip_markers = []
 
-                if TRANSCRIPT_AVAILABLE:
+                if FETCH_TRANSCRIPTS_IN_CLOUD and TRANSCRIPT_AVAILABLE:
                     print(f"    Fetching transcript for: {title[:50]}...")
                     transcript = self.get_transcript(video_id)
                     if transcript:
