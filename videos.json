@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-08-25T09:55:10.793481",
-  "total_videos": 161,
+  "last_updated": "2026-08-26T10:04:39.078636",
+  "total_videos": 165,
   "videos": [
     {
       "video_id": "oJmpE9PLz9w",
@@ -247,6 +247,19 @@
       "relevance_score": 4,
       "status": "pending",
       "discovered_at": "2026-08-24T19:05:51.736881",
+      "clip_markers": []
+    },
+    {
+      "video_id": "8qG_gGdmU5w",
+      "channel_name": "Gabe Poirot",
+      "channel_id": "UCWKMsegWgWqOa90t-DCZkdg",
+      "title": "Blood Red Moon Thursday Aug 27th Fulfills Stunning End Times Prophecy..",
+      "description": "On this video, Gabe Poirot breaks down the prophetic connection between the blood red moon this coming Thursday August 27th ...",
+      "published_at": "2026-08-24T01:17:21Z",
+      "url": "https://www.youtube.com/watch?v=8qG_gGdmU5w",
+      "relevance_score": 3,
+      "status": "pending",
+      "discovered_at": "2026-08-26T10:04:37.753873",
       "clip_markers": []
     },
     {
@@ -926,6 +939,58 @@
       "clip_markers": []
     },
     {
+      "video_id": "_qIoIAX_6oU",
+      "channel_name": "Wes Huff",
+      "channel_id": "UCJX2EazMKUqBQV048px2aoA",
+      "title": "The Gospels show reliability",
+      "description": "",
+      "published_at": "2026-08-25T23:05:14Z",
+      "url": "https://www.youtube.com/watch?v=_qIoIAX_6oU",
+      "relevance_score": 1,
+      "status": "pending",
+      "discovered_at": "2026-08-26T10:04:34.969954",
+      "clip_markers": []
+    },
+    {
+      "video_id": "Cm-M_ZdmnPE",
+      "channel_name": "L.A. Marzulli",
+      "channel_id": "UCySeXTLuH6wSJveZrA-sz9A",
+      "title": "Did Fallen Angels Lose Their Wings When They Fell?",
+      "description": "OUR SPONSOR: Start Reaching Your Weight Loss Goals Now! https://www.trimwithla.com Get 50% OFF By Clicking The Link ...",
+      "published_at": "2026-08-25T22:46:06Z",
+      "url": "https://www.youtube.com/watch?v=Cm-M_ZdmnPE",
+      "relevance_score": 1,
+      "status": "pending",
+      "discovered_at": "2026-08-26T10:04:39.076591",
+      "clip_markers": []
+    },
+    {
+      "video_id": "Z2XBk2LNQPk",
+      "channel_name": "Grace to You (John MacArthur)",
+      "channel_id": "UCneKpMu9SFGlt2usTdAI75A",
+      "title": "&quot;He is Lord, and I accept Him on His terms, not mine.&quot;",
+      "description": "Written: The Gospel According to Jesus Watch the full interview at https://www.gty.org/wow/written-the-gospel-according-to-jesus ...",
+      "published_at": "2026-08-25T14:30:09Z",
+      "url": "https://www.youtube.com/watch?v=Z2XBk2LNQPk",
+      "relevance_score": 1,
+      "status": "pending",
+      "discovered_at": "2026-08-26T10:04:32.795270",
+      "clip_markers": []
+    },
+    {
+      "video_id": "U8PDDf909Iw",
+      "channel_name": "Grace to You (John MacArthur)",
+      "channel_id": "UCneKpMu9SFGlt2usTdAI75A",
+      "title": "Written: The Gospel According to Jesus",
+      "description": "In 1988, John MacArthur published a book that took issue with the gospel most of evangelicalism was preaching\u2014that people ...",
+      "published_at": "2026-08-25T14:30:03Z",
+      "url": "https://www.youtube.com/watch?v=U8PDDf909Iw",
+      "relevance_score": 1,
+      "status": "pending",
+      "discovered_at": "2026-08-26T10:04:32.795250",
+      "clip_markers": []
+    },
+    {
       "video_id": "GK0l7rS3j_M",
       "channel_name": "Grace to You (John MacArthur)",
       "channel_id": "UCneKpMu9SFGlt2usTdAI75A",
@@ -1231,71 +1296,6 @@
       "relevance_score": 1,
       "status": "pending",
       "discovered_at": "2026-08-24T19:06:23.384614",
-      "clip_markers": []
-    },
-    {
-      "video_id": "XPmJPd9t7Eg",
-      "channel_name": "Behold Israel (Amir Tsarfati)",
-      "channel_id": "UCa3C7WpFobavsDJdkKUtodw",
-      "title": "Can We Know When the Rapture Will Happen?",
-      "description": "Jesus didn't tell believers to calculate the date of His return. He told them to stay ready because He could come at any moment.",
-      "published_at": "2026-07-26T15:45:03Z",
-      "url": "https://www.youtube.com/watch?v=XPmJPd9t7Eg",
-      "relevance_score": 1,
-      "status": "pending",
-      "discovered_at": "2026-08-24T19:10:13.572717",
-      "clip_markers": []
-    },
-    {
-      "video_id": "GyiTfW0CdGI",
-      "channel_name": "J.D. Farag",
-      "channel_id": "UCkz3m787ygph7Uvjxzngl-g",
-      "title": "Pastor JD explains that God has already set the exact day and hour for the rapture",
-      "description": "Pastor JD explains that God has already set the exact day and hour for the rapture, but the closer we get, the more attacks we see ...",
-      "published_at": "2026-07-23T20:07:18Z",
-      "url": "https://www.youtube.com/watch?v=GyiTfW0CdGI",
-      "relevance_score": 1,
-      "status": "pending",
-      "discovered_at": "2026-08-14T11:08:23.124315",
-      "clip_markers": []
-    },
-    {
-      "video_id": "xWe-h2u8488",
-      "channel_name": "CrossExamined (Frank Turek)",
-      "channel_id": "UCedYGs_lqq1uNet0u7qlSyQ",
-      "title": "What Are the Nephilim?",
-      "description": "SUPPORT CROSSEXAMINED (TAX-DEDUCTIBLE) \u25cb https://donor.crossexamined.org/",
-      "published_at": "2026-07-23T15:00:13Z",
-      "url": "https://www.youtube.com/watch?v=xWe-h2u8488",
-      "relevance_score": 1,
-      "status": "pending",
-      "discovered_at": "2026-08-24T19:08:58.957234",
-      "clip_markers": []
-    },
-    {
-      "video_id": "73ho6SJ_VM8",
-      "channel_name": "Prophecy Pros",
-      "channel_id": "UCM5pZmeOIGuO3naMnJYg3gA",
-      "title": "Season 19, Episode 9: The Horrible History of the Hinnom Valley",
-      "description": "The Prophecy Pros discuss the pagan history, and prophetic significance of the valley that runs along the south-western side of ...",
-      "published_at": "2026-07-22T07:00:28Z",
-      "url": "https://www.youtube.com/watch?v=73ho6SJ_VM8",
-      "relevance_score": 1,
-      "status": "pending",
-      "discovered_at": "2026-08-24T19:05:15.530256",
-      "clip_markers": []
-    },
-    {
-      "video_id": "iEYws1AVh_s",
-      "channel_name": "Real Life Jack Hibbs",
-      "channel_id": "UCzvq_2THJhueXOP8JdAO2-A",
-      "title": "Ezekiel 38 Prophecy And What It Says About Iran Today",
-      "description": "Pastor Jack walks through what the Bible says about Iran's future in light of Ezekiel 38. Subscribe to our channel: ...",
-      "published_at": "2026-07-16T12:30:00Z",
-      "url": "https://www.youtube.com/watch?v=iEYws1AVh_s",
-      "relevance_score": 1,
-      "status": "pending",
-      "discovered_at": "2026-08-24T19:06:32.997274",
       "clip_markers": []
     }
   ]
