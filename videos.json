@@ -1,7 +1,20 @@
 {
-  "last_updated": "2026-08-28T21:48:08.218620",
-  "total_videos": 169,
+  "last_updated": "2026-08-29T08:00:59.728311",
+  "total_videos": 167,
   "videos": [
+    {
+      "video_id": "r8t7TJX_6G4",
+      "channel_name": "J.D. Farag",
+      "channel_id": "UCkz3m787ygph7Uvjxzngl-g",
+      "title": "Bible Prophecy Update, Being Prepared For Persecution Pre-Rapture And Pre-Tribulation - Aug 30, 2026",
+      "description": "Pastor JD draws prophetic parallels with the church in Smyrna to the church today being prepared for both pre-rapture ...",
+      "published_at": "2026-08-29T00:23:42Z",
+      "url": "https://www.youtube.com/watch?v=r8t7TJX_6G4",
+      "relevance_score": 6,
+      "status": "pending",
+      "discovered_at": "2026-08-29T08:00:50.710591",
+      "clip_markers": []
+    },
     {
       "video_id": "oJmpE9PLz9w",
       "channel_name": "J.D. Farag",
@@ -436,7 +449,7 @@
       "channel_name": "Gabe Poirot",
       "channel_id": "UCWKMsegWgWqOa90t-DCZkdg",
       "title": "Elderly Woman&#39;s End Times Prophecy Is Going Viral...",
-      "description": "An elderly woman's warning about the End Times is going viral, but most people are missing the most important detail. In this ...",
+      "description": "An elderly woman's warning about the End Times is going viral, but most people are missing the most important detail.",
       "published_at": "2026-03-07T02:18:41Z",
       "url": "https://www.youtube.com/watch?v=ie4TXrriAI4",
       "relevance_score": 3,
@@ -991,6 +1004,19 @@
       "clip_markers": []
     },
     {
+      "video_id": "_FDdlAXqJLM",
+      "channel_name": "J.D. Farag",
+      "channel_id": "UCkz3m787ygph7Uvjxzngl-g",
+      "title": "Sermon - What Jesus Wants Me To Know In My Life And Death Stormy Trial, Mark 6:45-56 \u2013 Aug 30, 2026",
+      "description": "Pastor JD expounds on what's arguably one of the most life-changing accounts in the Gospels that speaks to those life and death ...",
+      "published_at": "2026-08-29T00:40:06Z",
+      "url": "https://www.youtube.com/watch?v=_FDdlAXqJLM",
+      "relevance_score": 1,
+      "status": "pending",
+      "discovered_at": "2026-08-29T08:00:50.710564",
+      "clip_markers": []
+    },
+    {
       "video_id": "raqqo-tvH4E",
       "channel_name": "L.A. Marzulli",
       "channel_id": "UCySeXTLuH6wSJveZrA-sz9A",
@@ -1273,30 +1299,6 @@
       "relevance_score": 1,
       "status": "pending",
       "discovered_at": "2026-08-08T09:58:48.640060"
-    },
-    {
-      "video_id": "SMHcBK011PQ",
-      "channel_name": "CBNnewsonline",
-      "channel_id": "UCYI_ychRnL7sJrG6PUSBpQA",
-      "title": "Iranian Horror, Persecution Rage as New AI Platform Covertly Delivers the Gospel",
-      "description": "Kairos is a powerful new Christian AI tool created by Iran Alive Ministries to help people in one of the world's most restricted ...",
-      "published_at": "2026-08-07T21:52:48Z",
-      "url": "https://www.youtube.com/watch?v=SMHcBK011PQ",
-      "relevance_score": 1,
-      "status": "pending",
-      "discovered_at": "2026-08-08T09:58:48.640078"
-    },
-    {
-      "video_id": "J9gyERS0aLo",
-      "channel_name": "CBNnewsonline",
-      "channel_id": "UCYI_ychRnL7sJrG6PUSBpQA",
-      "title": "Why Missionary Pilots Risk Everything for the Gospel",
-      "description": "In the remote mountains of Papua New Guinea, many villages can only be reached by airplane. For one missionary pilot, this trip ...",
-      "published_at": "2026-08-06T19:31:33Z",
-      "url": "https://www.youtube.com/watch?v=J9gyERS0aLo",
-      "relevance_score": 1,
-      "status": "pending",
-      "discovered_at": "2026-08-07T10:38:47.705370"
     }
   ]
 }
