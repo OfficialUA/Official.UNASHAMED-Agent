@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-08-30T08:01:06.217003",
-  "total_videos": 165,
+  "last_updated": "2026-08-31T08:01:09.771762",
+  "total_videos": 164,
   "videos": [
     {
       "video_id": "r8t7TJX_6G4",
@@ -1004,6 +1004,19 @@
       "clip_markers": []
     },
     {
+      "video_id": "7gOMC14wUkE",
+      "channel_name": "Behold Israel (Amir Tsarfati)",
+      "channel_id": "UCa3C7WpFobavsDJdkKUtodw",
+      "title": "What Every Christian Needs in the Last Days",
+      "description": "Not every voice carrying a Christian label is speaking biblical truth. In an age overflowing with false prophets, deception, and ...",
+      "published_at": "2026-08-31T01:00:28Z",
+      "url": "https://www.youtube.com/watch?v=7gOMC14wUkE",
+      "relevance_score": 1,
+      "status": "pending",
+      "discovered_at": "2026-08-31T08:01:03.892961",
+      "clip_markers": []
+    },
+    {
       "video_id": "xoS969z52Z4",
       "channel_name": "J.D. Farag",
       "channel_id": "UCkz3m787ygph7Uvjxzngl-g",
@@ -1288,18 +1301,6 @@
       "status": "pending",
       "discovered_at": "2026-08-24T19:15:22.641416",
       "clip_markers": []
-    },
-    {
-      "video_id": "xjQdl230Sg4",
-      "channel_name": "RealLifeJackHibbs",
-      "channel_id": "UCzvq_2THJhueXOP8JdAO2-A",
-      "title": "The False Religion Of The End",
-      "description": "The end times will have a one-world religion. Subscribe to our channel: https://bit.ly/39O6VdK CONNECT WITH PASTOR JACK ...",
-      "published_at": "2026-08-10T14:00:23Z",
-      "url": "https://www.youtube.com/watch?v=xjQdl230Sg4",
-      "relevance_score": 1,
-      "status": "pending",
-      "discovered_at": "2026-08-11T10:38:08.101597"
     }
   ]
 }
