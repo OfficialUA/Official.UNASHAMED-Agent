@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-08-31T08:01:09.771762",
-  "total_videos": 164,
+  "last_updated": "2026-09-01T08:01:07.054139",
+  "total_videos": 171,
   "videos": [
     {
       "video_id": "r8t7TJX_6G4",
@@ -39,6 +39,58 @@
       "relevance_score": 5,
       "status": "pending",
       "discovered_at": "2026-08-22T09:02:39.644909",
+      "clip_markers": []
+    },
+    {
+      "video_id": "Or8x-VKlxdU",
+      "channel_name": "Behold Israel (Amir Tsarfati)",
+      "channel_id": "UCa3C7WpFobavsDJdkKUtodw",
+      "title": "Why God Took Sin So Seriously",
+      "description": "Watch the entire Connect Q&A \"Bible Prophecy Q&A: Rapture, Israel & the Tribulation\" https://youtube.com/live/LKwbpB2YhP0 ...",
+      "published_at": "2026-08-31T23:30:03Z",
+      "url": "https://www.youtube.com/watch?v=Or8x-VKlxdU",
+      "relevance_score": 4,
+      "status": "pending",
+      "discovered_at": "2026-09-01T08:01:01.802977",
+      "clip_markers": []
+    },
+    {
+      "video_id": "EkWr_UzJH_Y",
+      "channel_name": "Behold Israel (Amir Tsarfati)",
+      "channel_id": "UCa3C7WpFobavsDJdkKUtodw",
+      "title": "Can Israel Handle Immigration?",
+      "description": "Watch the entire Connect Q&A \"Bible Prophecy Q&A: Rapture, Israel & the Tribulation\" https://youtube.com/live/LKwbpB2YhP0 ...",
+      "published_at": "2026-08-31T21:00:24Z",
+      "url": "https://www.youtube.com/watch?v=EkWr_UzJH_Y",
+      "relevance_score": 4,
+      "status": "pending",
+      "discovered_at": "2026-09-01T08:01:01.802996",
+      "clip_markers": []
+    },
+    {
+      "video_id": "Ugkmh-xfk5U",
+      "channel_name": "Behold Israel (Amir Tsarfati)",
+      "channel_id": "UCa3C7WpFobavsDJdkKUtodw",
+      "title": "How To Witness To A Jew",
+      "description": "Watch the entire Connect Q&A \"Bible Prophecy Q&A: Rapture, Israel & the Tribulation\" https://youtube.com/live/LKwbpB2YhP0 ...",
+      "published_at": "2026-08-31T18:32:17Z",
+      "url": "https://www.youtube.com/watch?v=Ugkmh-xfk5U",
+      "relevance_score": 4,
+      "status": "pending",
+      "discovered_at": "2026-09-01T08:01:01.803005",
+      "clip_markers": []
+    },
+    {
+      "video_id": "LKwbpB2YhP0",
+      "channel_name": "Behold Israel (Amir Tsarfati)",
+      "channel_id": "UCa3C7WpFobavsDJdkKUtodw",
+      "title": "Bible Prophecy Q&amp;A: Rapture, Israel &amp; the Tribulation",
+      "description": "Does the Feast of Trumpets reveal when the Rapture will happen, or does that undermine the biblical doctrine of imminence?",
+      "published_at": "2026-08-31T16:10:40Z",
+      "url": "https://www.youtube.com/watch?v=LKwbpB2YhP0",
+      "relevance_score": 4,
+      "status": "pending",
+      "discovered_at": "2026-09-01T08:01:01.803016",
       "clip_markers": []
     },
     {
@@ -260,6 +312,19 @@
       "relevance_score": 4,
       "status": "pending",
       "discovered_at": "2026-08-24T19:05:51.736881",
+      "clip_markers": []
+    },
+    {
+      "video_id": "6cZRWfHkBC8",
+      "channel_name": "Gabe Poirot",
+      "channel_id": "UCWKMsegWgWqOa90t-DCZkdg",
+      "title": "God Told Me This is the Last Hour.",
+      "description": "The Last Hour is Here, & The Anti-Christ Will Soon Appear On this video, Gabe Poirot shares an end times prophecy that has ...",
+      "published_at": "2026-08-31T22:16:11Z",
+      "url": "https://www.youtube.com/watch?v=6cZRWfHkBC8",
+      "relevance_score": 3,
+      "status": "pending",
+      "discovered_at": "2026-09-01T08:01:05.682856",
       "clip_markers": []
     },
     {
@@ -1004,6 +1069,32 @@
       "clip_markers": []
     },
     {
+      "video_id": "5UI1JDNzVH4",
+      "channel_name": "CBN News Online",
+      "channel_id": "UCYI_ychRnL7sJrG6PUSBpQA",
+      "title": "Rapper Nicki Minaj Drops Scripture, Jesus Proclamation",
+      "description": "Rapper Nicki Minaj recently shared the Gospel on social media, quoting from Psalms and expressing her journey with Jesus.",
+      "published_at": "2026-08-31T23:08:40Z",
+      "url": "https://www.youtube.com/watch?v=5UI1JDNzVH4",
+      "relevance_score": 1,
+      "status": "pending",
+      "discovered_at": "2026-09-01T08:01:00.576506",
+      "clip_markers": []
+    },
+    {
+      "video_id": "vJ6r3xoG5qs",
+      "channel_name": "CrossExamined (Frank Turek)",
+      "channel_id": "UCedYGs_lqq1uNet0u7qlSyQ",
+      "title": "Where Did the Fallen Angels Come From?",
+      "description": "SUPPORT CROSSEXAMINED (TAX-DEDUCTIBLE) \u25cb https://donor.crossexamined.org/",
+      "published_at": "2026-08-31T15:00:03Z",
+      "url": "https://www.youtube.com/watch?v=vJ6r3xoG5qs",
+      "relevance_score": 1,
+      "status": "pending",
+      "discovered_at": "2026-09-01T08:01:01.214548",
+      "clip_markers": []
+    },
+    {
       "video_id": "7gOMC14wUkE",
       "channel_name": "Behold Israel (Amir Tsarfati)",
       "channel_id": "UCa3C7WpFobavsDJdkKUtodw",
@@ -1209,97 +1300,6 @@
       "relevance_score": 1,
       "status": "pending",
       "discovered_at": "2026-08-19T09:27:04.699470",
-      "clip_markers": []
-    },
-    {
-      "video_id": "EvBOx45io5k",
-      "channel_name": "Behold Israel (Amir Tsarfati)",
-      "channel_id": "UCa3C7WpFobavsDJdkKUtodw",
-      "title": "Europe Is Has Been Prepared for the Antichrist",
-      "description": "A leadership vacuum, spiritual collapse, and a world desperate for peace. According to this prophetic framework, the conditions ...",
-      "published_at": "2026-08-16T22:48:39Z",
-      "url": "https://www.youtube.com/watch?v=EvBOx45io5k",
-      "relevance_score": 1,
-      "status": "pending",
-      "discovered_at": "2026-08-24T19:10:00.415461",
-      "clip_markers": []
-    },
-    {
-      "video_id": "Z_eCCb3uTB4",
-      "channel_name": "Wes Huff",
-      "channel_id": "UCJX2EazMKUqBQV048px2aoA",
-      "title": "Can the Gospels survive historical scrutiny?",
-      "description": "Do the Gospels behave like history when we test the details? The Gospel writers could never have anticipated the kinds of tests ...",
-      "published_at": "2026-08-14T18:02:46Z",
-      "url": "https://www.youtube.com/watch?v=Z_eCCb3uTB4",
-      "relevance_score": 1,
-      "status": "pending",
-      "discovered_at": "2026-08-24T19:13:56.802727",
-      "clip_markers": []
-    },
-    {
-      "video_id": "lM5-A8sIBOk",
-      "channel_name": "Real Life Jack Hibbs",
-      "channel_id": "UCzvq_2THJhueXOP8JdAO2-A",
-      "title": "Can Satan Raise People From The Dead?",
-      "description": "Something will happen to the Antichrist that leaves the world speechless. Subscribe to our channel: https://bit.ly/39O6VdK ...",
-      "published_at": "2026-08-14T14:00:21Z",
-      "url": "https://www.youtube.com/watch?v=lM5-A8sIBOk",
-      "relevance_score": 1,
-      "status": "pending",
-      "discovered_at": "2026-08-24T19:06:07.086959",
-      "clip_markers": []
-    },
-    {
-      "video_id": "eLJ_iU9fN-s",
-      "channel_name": "Ruslan KD",
-      "channel_id": "UCj2yZE96gWsFyeVYnY9zXeg",
-      "title": "Wes Huff Exposes Why These Gospels Were Extremely Dangerous",
-      "description": "Pick Up Our Prayer Journal At: https://blessgod.co/products/preorder-bless-god-prayer-journal?variant=44769049575637 Go Get ...",
-      "published_at": "2026-08-13T20:58:29Z",
-      "url": "https://www.youtube.com/watch?v=eLJ_iU9fN-s",
-      "relevance_score": 1,
-      "status": "pending",
-      "discovered_at": "2026-08-24T19:17:03.994098",
-      "clip_markers": []
-    },
-    {
-      "video_id": "b95dPBvCTcY",
-      "channel_name": "Prophecy Pros",
-      "channel_id": "UCM5pZmeOIGuO3naMnJYg3gA",
-      "title": "Season 19, Episode 12: Q&amp;A: Your Questions Answered",
-      "description": "The Prophecy Pros are joined by Kari Duffy to answer listener questions from this season. *Sign up for the newsletter:* ...",
-      "published_at": "2026-08-12T07:00:16Z",
-      "url": "https://www.youtube.com/watch?v=b95dPBvCTcY",
-      "relevance_score": 1,
-      "status": "pending",
-      "discovered_at": "2026-08-12T11:12:17.978551",
-      "clip_markers": []
-    },
-    {
-      "video_id": "niRwDSvHqX4",
-      "channel_name": "L.A. Marzulli",
-      "channel_id": "UCySeXTLuH6wSJveZrA-sz9A",
-      "title": "The Rapture Close? Are Aliens Fallen Ones?",
-      "description": "SPONSOR LINK: https://www.noblegoldinvestments.com or call 877-646-5347 Noble Gold is Who I Trust ^^^ Off the Grid Rumble ...",
-      "published_at": "2026-08-11T19:29:37Z",
-      "url": "https://www.youtube.com/watch?v=niRwDSvHqX4",
-      "relevance_score": 1,
-      "status": "pending",
-      "discovered_at": "2026-08-24T19:22:27.466206",
-      "clip_markers": []
-    },
-    {
-      "video_id": "M1eHQXsx_cA",
-      "channel_name": "HeartCry Missionary Society (Paul Washer)",
-      "channel_id": "UCm6u_sCZttC70GyRh6uCurQ",
-      "title": "The Work of the Gospel in Poland",
-      "description": "Poland had been one of the most devotedly Roman Catholic nations in the world. And because of even this barren faith in God, ...",
-      "published_at": "2026-08-10T18:36:02Z",
-      "url": "https://www.youtube.com/watch?v=M1eHQXsx_cA",
-      "relevance_score": 1,
-      "status": "pending",
-      "discovered_at": "2026-08-24T19:15:22.641416",
       "clip_markers": []
     }
   ]
