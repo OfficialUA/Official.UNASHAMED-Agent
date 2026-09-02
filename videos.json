@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-09-01T08:01:07.054139",
-  "total_videos": 171,
+  "last_updated": "2026-09-02T08:01:33.347946",
+  "total_videos": 173,
   "videos": [
     {
       "video_id": "r8t7TJX_6G4",
@@ -318,7 +318,7 @@
       "video_id": "6cZRWfHkBC8",
       "channel_name": "Gabe Poirot",
       "channel_id": "UCWKMsegWgWqOa90t-DCZkdg",
-      "title": "God Told Me This is the Last Hour.",
+      "title": "God Told Me This Is The Last Hour.",
       "description": "The Last Hour is Here, & The Anti-Christ Will Soon Appear On this video, Gabe Poirot shares an end times prophecy that has ...",
       "published_at": "2026-08-31T22:16:11Z",
       "url": "https://www.youtube.com/watch?v=6cZRWfHkBC8",
@@ -1069,6 +1069,19 @@
       "clip_markers": []
     },
     {
+      "video_id": "NeF1sYIemn4",
+      "channel_name": "CrossExamined (Frank Turek)",
+      "channel_id": "UCedYGs_lqq1uNet0u7qlSyQ",
+      "title": "Why Do We Care Who Wrote the Gospels? @MikeLiconaOfficial",
+      "description": "SUPPORT CROSSEXAMINED (TAX-DEDUCTIBLE) \u25cb https://donor.crossexamined.org/",
+      "published_at": "2026-09-01T15:00:25Z",
+      "url": "https://www.youtube.com/watch?v=NeF1sYIemn4",
+      "relevance_score": 1,
+      "status": "pending",
+      "discovered_at": "2026-09-02T08:01:26.475416",
+      "clip_markers": []
+    },
+    {
       "video_id": "5UI1JDNzVH4",
       "channel_name": "CBN News Online",
       "channel_id": "UCYI_ychRnL7sJrG6PUSBpQA",
@@ -1287,19 +1300,6 @@
       "relevance_score": 1,
       "status": "pending",
       "discovered_at": "2026-08-24T19:21:32.139901",
-      "clip_markers": []
-    },
-    {
-      "video_id": "pUQDTtB580M",
-      "channel_name": "J.D. Farag",
-      "channel_id": "UCkz3m787ygph7Uvjxzngl-g",
-      "title": "Pastor JD reminds us that we each have been given the mina of the Gospel of Jesus Christ",
-      "description": "Pastor JD reminds us that we each have been given the mina of the Gospel of Jesus Christ. What are you doing with it? Did you ...",
-      "published_at": "2026-08-18T23:17:46Z",
-      "url": "https://www.youtube.com/watch?v=pUQDTtB580M",
-      "relevance_score": 1,
-      "status": "pending",
-      "discovered_at": "2026-08-19T09:27:04.699470",
       "clip_markers": []
     }
   ]
