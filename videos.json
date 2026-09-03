@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-09-02T08:01:33.347946",
-  "total_videos": 173,
+  "last_updated": "2026-09-03T08:01:08.509906",
+  "total_videos": 178,
   "videos": [
     {
       "video_id": "r8t7TJX_6G4",
@@ -52,6 +52,19 @@
       "relevance_score": 4,
       "status": "pending",
       "discovered_at": "2026-09-01T08:01:01.802977",
+      "clip_markers": []
+    },
+    {
+      "video_id": "6cZRWfHkBC8",
+      "channel_name": "Gabe Poirot",
+      "channel_id": "UCWKMsegWgWqOa90t-DCZkdg",
+      "title": "The Last Hour &amp; The Antichrist ",
+      "description": "The Last Hour is Here, & The Anti-Christ Will Soon Appear On this video, Gabe Poirot shares an end times prophecy that has ...",
+      "published_at": "2026-08-31T22:16:11Z",
+      "url": "https://www.youtube.com/watch?v=6cZRWfHkBC8",
+      "relevance_score": 4,
+      "status": "pending",
+      "discovered_at": "2026-09-01T08:01:05.682856",
       "clip_markers": []
     },
     {
@@ -315,19 +328,6 @@
       "clip_markers": []
     },
     {
-      "video_id": "6cZRWfHkBC8",
-      "channel_name": "Gabe Poirot",
-      "channel_id": "UCWKMsegWgWqOa90t-DCZkdg",
-      "title": "God Told Me This Is The Last Hour.",
-      "description": "The Last Hour is Here, & The Anti-Christ Will Soon Appear On this video, Gabe Poirot shares an end times prophecy that has ...",
-      "published_at": "2026-08-31T22:16:11Z",
-      "url": "https://www.youtube.com/watch?v=6cZRWfHkBC8",
-      "relevance_score": 3,
-      "status": "pending",
-      "discovered_at": "2026-09-01T08:01:05.682856",
-      "clip_markers": []
-    },
-    {
       "video_id": "wf9J1dOuEoE",
       "channel_name": "J.D. Farag",
       "channel_id": "UCkz3m787ygph7Uvjxzngl-g",
@@ -559,6 +559,19 @@
       "relevance_score": 3,
       "status": "pending",
       "discovered_at": "2026-08-24T19:20:32.697073",
+      "clip_markers": []
+    },
+    {
+      "video_id": "hLrIWZQs158",
+      "channel_name": "J.D. Farag",
+      "channel_id": "UCkz3m787ygph7Uvjxzngl-g",
+      "title": "Important Bible Prophecy Discussion Concerning All Now Happening with Pastor JD &amp; Pastor Ken Ortize",
+      "description": "Pastor JD's Pastor, Ken Ortize, discusses with Pastor JD topics of paramount importance specific to Bible prophecy and today's ...",
+      "published_at": "2026-09-02T18:52:01Z",
+      "url": "https://www.youtube.com/watch?v=hLrIWZQs158",
+      "relevance_score": 2,
+      "status": "pending",
+      "discovered_at": "2026-09-03T08:01:02.527488",
       "clip_markers": []
     },
     {
@@ -1069,6 +1082,19 @@
       "clip_markers": []
     },
     {
+      "video_id": "vzpvUqoX_Ps",
+      "channel_name": "Ruslan KD",
+      "channel_id": "UCj2yZE96gWsFyeVYnY9zXeg",
+      "title": "JD Vance Wasn\u2019t Expecting This Question From Bryce Crawford...",
+      "description": "Tour Tickets Here: https://blessgod.co/pages/live Bryce Crawford Presses JD Vance On Aliens, End Times, And Heaven... : Get ...",
+      "published_at": "2026-09-02T22:38:06Z",
+      "url": "https://www.youtube.com/watch?v=vzpvUqoX_Ps",
+      "relevance_score": 1,
+      "status": "pending",
+      "discovered_at": "2026-09-03T08:01:06.333608",
+      "clip_markers": []
+    },
+    {
       "video_id": "NeF1sYIemn4",
       "channel_name": "CrossExamined (Frank Turek)",
       "channel_id": "UCedYGs_lqq1uNet0u7qlSyQ",
@@ -1274,32 +1300,6 @@
       "relevance_score": 1,
       "status": "pending",
       "discovered_at": "2026-08-24T19:22:19.536083",
-      "clip_markers": []
-    },
-    {
-      "video_id": "2gxnjbYlv6M",
-      "channel_name": "CBN News Online",
-      "channel_id": "UCYI_ychRnL7sJrG6PUSBpQA",
-      "title": "Are the End Times Upon Us? | Newsmakers",
-      "description": "On this episode of \"Newsmakers,\" International Christian Concern President Shawn Wright reveals alarming statistics about the ...",
-      "published_at": "2026-08-21T00:00:33Z",
-      "url": "https://www.youtube.com/watch?v=2gxnjbYlv6M",
-      "relevance_score": 1,
-      "status": "pending",
-      "discovered_at": "2026-08-24T19:07:11.989699",
-      "clip_markers": []
-    },
-    {
-      "video_id": "W2iynkHLSi4",
-      "channel_name": "World Challenge (David Wilkerson)",
-      "channel_id": "UCPSNPjFfoFW_A_6popRatsA",
-      "title": "Good Works Aren\u2019t the Gospel",
-      "description": "God's Sovereignty and Our Salvation | Evan Wilkerson Live in a way that makes people ask what's different about you. Then be ...",
-      "published_at": "2026-08-19T17:45:07Z",
-      "url": "https://www.youtube.com/watch?v=W2iynkHLSi4",
-      "relevance_score": 1,
-      "status": "pending",
-      "discovered_at": "2026-08-24T19:21:32.139901",
       "clip_markers": []
     }
   ]
