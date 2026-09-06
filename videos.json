@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-09-05T08:01:26.579982",
-  "total_videos": 179,
+  "last_updated": "2026-09-06T08:01:22.944455",
+  "total_videos": 181,
   "videos": [
     {
       "video_id": "r8t7TJX_6G4",
@@ -520,6 +520,19 @@
       "relevance_score": 3,
       "status": "pending",
       "discovered_at": "2026-08-24T19:20:24.885036",
+      "clip_markers": []
+    },
+    {
+      "video_id": "zRg0K4ea7gU",
+      "channel_name": "Derek Prince Ministries",
+      "channel_id": "UCzTWdr_9IVWWmeStz5qDjoA",
+      "title": "Jesus\u2019 Second Coming | Derek Prince",
+      "description": "How does eagerly awaiting the return of Jesus Christ impact your daily life? The New Testament reveals that this blessed hope is ...",
+      "published_at": "2026-02-20T15:30:43Z",
+      "url": "https://www.youtube.com/watch?v=zRg0K4ea7gU",
+      "relevance_score": 3,
+      "status": "pending",
+      "discovered_at": "2026-09-06T08:01:21.824246",
       "clip_markers": []
     },
     {
@@ -1287,19 +1300,6 @@
       "relevance_score": 1,
       "status": "pending",
       "discovered_at": "2026-08-29T08:00:50.710564",
-      "clip_markers": []
-    },
-    {
-      "video_id": "raqqo-tvH4E",
-      "channel_name": "L.A. Marzulli",
-      "channel_id": "UCySeXTLuH6wSJveZrA-sz9A",
-      "title": "Politics, Prophecy, and the Supernatural Report Supercut!",
-      "description": "OUR SPONSOR: Start Reaching Your Weight Loss Goals Now! https://www.trimwithla.com Get 50% OFF By Clicking The Link ...",
-      "published_at": "2026-08-28T20:15:21Z",
-      "url": "https://www.youtube.com/watch?v=raqqo-tvH4E",
-      "relevance_score": 1,
-      "status": "pending",
-      "discovered_at": "2026-08-28T21:48:08.216500",
       "clip_markers": []
     }
   ]
