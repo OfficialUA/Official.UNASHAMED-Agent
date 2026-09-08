@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-09-07T13:43:11.359744",
-  "total_videos": 176,
+  "last_updated": "2026-09-08T12:19:02.035234",
+  "total_videos": 186,
   "videos": [
     {
       "video_id": "r8t7TJX_6G4",
@@ -325,6 +325,58 @@
       "relevance_score": 4,
       "status": "pending",
       "discovered_at": "2026-08-24T19:05:51.736881",
+      "clip_markers": []
+    },
+    {
+      "video_id": "Kbeb2x7ytoY",
+      "channel_name": "Behold Israel (Amir Tsarfati)",
+      "channel_id": "UCa3C7WpFobavsDJdkKUtodw",
+      "title": "Who Is The Rapture For?",
+      "description": "Watch the entire Bible Prophecy Q&A \"The Ark, Rapture & Millennial Temple\" https://youtube.com/live/X-hqIn0gxPQ Subscribe to ...",
+      "published_at": "2026-09-07T23:30:07Z",
+      "url": "https://www.youtube.com/watch?v=Kbeb2x7ytoY",
+      "relevance_score": 3,
+      "status": "pending",
+      "discovered_at": "2026-09-08T12:18:56.880974",
+      "clip_markers": []
+    },
+    {
+      "video_id": "dpmVQ-F__TM",
+      "channel_name": "Behold Israel (Amir Tsarfati)",
+      "channel_id": "UCa3C7WpFobavsDJdkKUtodw",
+      "title": "What the Quran Says About Israel",
+      "description": "Watch the entire Bible Prophecy Q&A \"The Ark, Rapture & Millennial Temple\" https://youtube.com/live/X-hqIn0gxPQ Subscribe to ...",
+      "published_at": "2026-09-07T21:00:04Z",
+      "url": "https://www.youtube.com/watch?v=dpmVQ-F__TM",
+      "relevance_score": 3,
+      "status": "pending",
+      "discovered_at": "2026-09-08T12:18:56.880995",
+      "clip_markers": []
+    },
+    {
+      "video_id": "keGvwDyL-Rk",
+      "channel_name": "Behold Israel (Amir Tsarfati)",
+      "channel_id": "UCa3C7WpFobavsDJdkKUtodw",
+      "title": "Understanding Jihadist Mindset",
+      "description": "Watch the entire Bible Prophecy Q&A \"The Ark, Rapture & Millennial Temple\" https://youtube.com/live/X-hqIn0gxPQ Subscribe to ...",
+      "published_at": "2026-09-07T18:35:00Z",
+      "url": "https://www.youtube.com/watch?v=keGvwDyL-Rk",
+      "relevance_score": 3,
+      "status": "pending",
+      "discovered_at": "2026-09-08T12:18:56.881005",
+      "clip_markers": []
+    },
+    {
+      "video_id": "X-hqIn0gxPQ",
+      "channel_name": "Behold Israel (Amir Tsarfati)",
+      "channel_id": "UCa3C7WpFobavsDJdkKUtodw",
+      "title": "Bible Prophecy Q&amp;A: The Ark, Rapture &amp; Millennial Temple",
+      "description": "Tune in for a live Q&A session as questions submitted by viewers are answered. Where is the Ark of the Covenant, and could it ...",
+      "published_at": "2026-09-07T16:08:22Z",
+      "url": "https://www.youtube.com/watch?v=X-hqIn0gxPQ",
+      "relevance_score": 3,
+      "status": "pending",
+      "discovered_at": "2026-09-08T12:18:56.881016",
       "clip_markers": []
     },
     {
@@ -1121,6 +1173,45 @@
       "clip_markers": []
     },
     {
+      "video_id": "N3ELHy8mSUk",
+      "channel_name": "CrossExamined (Frank Turek)",
+      "channel_id": "UCedYGs_lqq1uNet0u7qlSyQ",
+      "title": "Former Buddhist Asks: Is My Dad Saved?",
+      "description": "Her dad used to be a pastor. Now he denies a key part of the Gospel. After leaving Buddhism and becoming a Christian herself, ...",
+      "published_at": "2026-09-07T22:00:31Z",
+      "url": "https://www.youtube.com/watch?v=N3ELHy8mSUk",
+      "relevance_score": 1,
+      "status": "pending",
+      "discovered_at": "2026-09-08T12:18:56.269016",
+      "clip_markers": []
+    },
+    {
+      "video_id": "tlX4YmWaL5Y",
+      "channel_name": "Ruslan KD",
+      "channel_id": "UCj2yZE96gWsFyeVYnY9zXeg",
+      "title": "NeedGod.Net Exposes What Christians Get Wrong About The Gospel...",
+      "description": "Donate Now To Human Coalition: \u2060\u2060\u2060\u2060\u2060\u2060http://humancoalition.org/ruslan\u2060\u2060\u2060\u2060\u2060\u2060 Go Get Tickets For My Tour: ...",
+      "published_at": "2026-09-07T20:39:09Z",
+      "url": "https://www.youtube.com/watch?v=tlX4YmWaL5Y",
+      "relevance_score": 1,
+      "status": "pending",
+      "discovered_at": "2026-09-08T12:18:59.655603",
+      "clip_markers": []
+    },
+    {
+      "video_id": "urBMztK9foE",
+      "channel_name": "CBN News Online",
+      "channel_id": "UCYI_ychRnL7sJrG6PUSBpQA",
+      "title": "Taking the Gospel to the Ends of the Earth | CBN NewsWatch - September 7, 2026",
+      "description": "CBN News takes you on a journey deep into the mountains and jungles of Papua New Guinea for an in-depth look into JAARS, ...",
+      "published_at": "2026-09-07T14:00:20Z",
+      "url": "https://www.youtube.com/watch?v=urBMztK9foE",
+      "relevance_score": 1,
+      "status": "pending",
+      "discovered_at": "2026-09-08T12:18:55.670473",
+      "clip_markers": []
+    },
+    {
       "video_id": "czlOU_XVOsc",
       "channel_name": "Gabe Poirot",
       "channel_id": "UCWKMsegWgWqOa90t-DCZkdg",
@@ -1209,97 +1300,6 @@
       "relevance_score": 1,
       "status": "pending",
       "discovered_at": "2026-09-04T08:01:08.818840",
-      "clip_markers": []
-    },
-    {
-      "video_id": "uzAWkSXv_UE",
-      "channel_name": "Real Life Jack Hibbs",
-      "channel_id": "UCzvq_2THJhueXOP8JdAO2-A",
-      "title": "False Teachers Are Coming Like Never Before",
-      "description": "In this episode, Pastor Jack uses Scripture to examine what makes a gospel false and how believers can recognize false prophets ...",
-      "published_at": "2026-09-03T12:30:17Z",
-      "url": "https://www.youtube.com/watch?v=uzAWkSXv_UE",
-      "relevance_score": 1,
-      "status": "pending",
-      "discovered_at": "2026-09-04T08:01:02.734888",
-      "clip_markers": []
-    },
-    {
-      "video_id": "vzpvUqoX_Ps",
-      "channel_name": "Ruslan KD",
-      "channel_id": "UCj2yZE96gWsFyeVYnY9zXeg",
-      "title": "JD Vance Wasn\u2019t Expecting This Question From Bryce Crawford...",
-      "description": "Tour Tickets Here: https://blessgod.co/pages/live Bryce Crawford Presses JD Vance On Aliens, End Times, And Heaven... : Get ...",
-      "published_at": "2026-09-02T22:38:06Z",
-      "url": "https://www.youtube.com/watch?v=vzpvUqoX_Ps",
-      "relevance_score": 1,
-      "status": "pending",
-      "discovered_at": "2026-09-03T08:01:06.333608",
-      "clip_markers": []
-    },
-    {
-      "video_id": "NeF1sYIemn4",
-      "channel_name": "CrossExamined (Frank Turek)",
-      "channel_id": "UCedYGs_lqq1uNet0u7qlSyQ",
-      "title": "Why Do We Care Who Wrote the Gospels? @MikeLiconaOfficial",
-      "description": "SUPPORT CROSSEXAMINED (TAX-DEDUCTIBLE) \u25cb https://donor.crossexamined.org/",
-      "published_at": "2026-09-01T15:00:25Z",
-      "url": "https://www.youtube.com/watch?v=NeF1sYIemn4",
-      "relevance_score": 1,
-      "status": "pending",
-      "discovered_at": "2026-09-02T08:01:26.475416",
-      "clip_markers": []
-    },
-    {
-      "video_id": "5UI1JDNzVH4",
-      "channel_name": "CBN News Online",
-      "channel_id": "UCYI_ychRnL7sJrG6PUSBpQA",
-      "title": "Rapper Nicki Minaj Drops Scripture, Jesus Proclamation",
-      "description": "Rapper Nicki Minaj recently shared the Gospel on social media, quoting from Psalms and expressing her journey with Jesus.",
-      "published_at": "2026-08-31T23:08:40Z",
-      "url": "https://www.youtube.com/watch?v=5UI1JDNzVH4",
-      "relevance_score": 1,
-      "status": "pending",
-      "discovered_at": "2026-09-01T08:01:00.576506",
-      "clip_markers": []
-    },
-    {
-      "video_id": "vJ6r3xoG5qs",
-      "channel_name": "CrossExamined (Frank Turek)",
-      "channel_id": "UCedYGs_lqq1uNet0u7qlSyQ",
-      "title": "Where Did the Fallen Angels Come From?",
-      "description": "SUPPORT CROSSEXAMINED (TAX-DEDUCTIBLE) \u25cb https://donor.crossexamined.org/",
-      "published_at": "2026-08-31T15:00:03Z",
-      "url": "https://www.youtube.com/watch?v=vJ6r3xoG5qs",
-      "relevance_score": 1,
-      "status": "pending",
-      "discovered_at": "2026-09-01T08:01:01.214548",
-      "clip_markers": []
-    },
-    {
-      "video_id": "7gOMC14wUkE",
-      "channel_name": "Behold Israel (Amir Tsarfati)",
-      "channel_id": "UCa3C7WpFobavsDJdkKUtodw",
-      "title": "What Every Christian Needs in the Last Days",
-      "description": "Not every voice carrying a Christian label is speaking biblical truth. In an age overflowing with false prophets, deception, and ...",
-      "published_at": "2026-08-31T01:00:28Z",
-      "url": "https://www.youtube.com/watch?v=7gOMC14wUkE",
-      "relevance_score": 1,
-      "status": "pending",
-      "discovered_at": "2026-08-31T08:01:03.892961",
-      "clip_markers": []
-    },
-    {
-      "video_id": "xoS969z52Z4",
-      "channel_name": "J.D. Farag",
-      "channel_id": "UCkz3m787ygph7Uvjxzngl-g",
-      "title": "Pastor JD shares how the world is infiltrating today&#39;s last days church",
-      "description": "Pastor JD shares how the world is infiltrating today's last days church, instead of today's last days church influencing the world.",
-      "published_at": "2026-08-29T23:51:06Z",
-      "url": "https://www.youtube.com/watch?v=xoS969z52Z4",
-      "relevance_score": 1,
-      "status": "pending",
-      "discovered_at": "2026-08-30T08:00:56.908678",
       "clip_markers": []
     }
   ]
