@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-09-09T12:30:47.501884",
-  "total_videos": 186,
+  "last_updated": "2026-09-10T12:24:26.034890",
+  "total_videos": 184,
   "videos": [
     {
       "video_id": "r8t7TJX_6G4",
@@ -1199,6 +1199,32 @@
       "clip_markers": []
     },
     {
+      "video_id": "UrTzyBiaIwE",
+      "channel_name": "Shawn Ryan Show",
+      "channel_id": "UCkoujZQZatbqy4KGcgjpVxQ",
+      "title": "Did Jesus Really Resurrect From the Dead?  | Official Preview",
+      "description": "A lot of people are scared of the end times. Should they be?\" \"No. If one is living, striving to live a good and just life, there's nothing ...",
+      "published_at": "2026-09-09T22:00:30Z",
+      "url": "https://www.youtube.com/watch?v=UrTzyBiaIwE",
+      "relevance_score": 1,
+      "status": "pending",
+      "discovered_at": "2026-09-10T12:24:22.857232",
+      "clip_markers": []
+    },
+    {
+      "video_id": "-jJKsQd4Bqs",
+      "channel_name": "Shawn Ryan Show",
+      "channel_id": "UCkoujZQZatbqy4KGcgjpVxQ",
+      "title": "Why Were Some Gospels Left Out of the Bible? \ud83d\ude33",
+      "description": "Privacy Isn't Paranoia, It's Protection. Download the Glacier app today: https://srs.site/glacierapp Support the Shawn Ryan Show ...",
+      "published_at": "2026-09-09T18:00:00Z",
+      "url": "https://www.youtube.com/watch?v=-jJKsQd4Bqs",
+      "relevance_score": 1,
+      "status": "pending",
+      "discovered_at": "2026-09-10T12:24:22.857288",
+      "clip_markers": []
+    },
+    {
       "video_id": "7uHuq1aAxL4",
       "channel_name": "Ruslan KD",
       "channel_id": "UCj2yZE96gWsFyeVYnY9zXeg",
@@ -1274,32 +1300,6 @@
       "relevance_score": 1,
       "status": "pending",
       "discovered_at": "2026-09-08T12:18:55.670473",
-      "clip_markers": []
-    },
-    {
-      "video_id": "czlOU_XVOsc",
-      "channel_name": "Gabe Poirot",
-      "channel_id": "UCWKMsegWgWqOa90t-DCZkdg",
-      "title": "Viral TikTok Unveils End Times Mysteries...",
-      "description": "Viral TikTok Explains End Times Prophecies That Are Being Fulfilled... On this video, Gabe Poirot reacts to the viral podcast We ...",
-      "published_at": "2026-09-07T00:12:11Z",
-      "url": "https://www.youtube.com/watch?v=czlOU_XVOsc",
-      "relevance_score": 1,
-      "status": "pending",
-      "discovered_at": "2026-09-07T13:43:10.028934",
-      "clip_markers": []
-    },
-    {
-      "video_id": "gEQ10g3ohE4",
-      "channel_name": "CBN News Online",
-      "channel_id": "UCYI_ychRnL7sJrG6PUSBpQA",
-      "title": "&#39;Had a Lump in My Breast&#39;: Woman Says She Was Miraculously Healed After Cutting Ties to Her Sorority",
-      "description": "Gospel singer and Pastor Travis Greene made headlines last October when he shared why he renounced his membership in the ...",
-      "published_at": "2026-09-04T16:00:16Z",
-      "url": "https://www.youtube.com/watch?v=gEQ10g3ohE4",
-      "relevance_score": 1,
-      "status": "pending",
-      "discovered_at": "2026-09-05T08:01:08.156915",
       "clip_markers": []
     }
   ]
