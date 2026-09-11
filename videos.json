@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-09-10T12:24:26.034890",
-  "total_videos": 184,
+  "last_updated": "2026-09-11T12:22:52.502258",
+  "total_videos": 179,
   "videos": [
     {
       "video_id": "r8t7TJX_6G4",
@@ -1199,6 +1199,19 @@
       "clip_markers": []
     },
     {
+      "video_id": "dgV6xE5ays0",
+      "channel_name": "Derek Prince Ministries",
+      "channel_id": "UCzTWdr_9IVWWmeStz5qDjoA",
+      "title": "The Overthrow of the Antichrist | Derek Prince",
+      "description": "While many antichrists have come and gone throughout history, the final Antichrist has yet to be revealed as the ultimate ...",
+      "published_at": "2026-09-10T14:30:32Z",
+      "url": "https://www.youtube.com/watch?v=dgV6xE5ays0",
+      "relevance_score": 1,
+      "status": "pending",
+      "discovered_at": "2026-09-11T12:22:51.364477",
+      "clip_markers": []
+    },
+    {
       "video_id": "UrTzyBiaIwE",
       "channel_name": "Shawn Ryan Show",
       "channel_id": "UCkoujZQZatbqy4KGcgjpVxQ",
@@ -1215,7 +1228,7 @@
       "video_id": "-jJKsQd4Bqs",
       "channel_name": "Shawn Ryan Show",
       "channel_id": "UCkoujZQZatbqy4KGcgjpVxQ",
-      "title": "Why Were Some Gospels Left Out of the Bible? \ud83d\ude33",
+      "title": "Why the Church Kept These Gospels Out of the Bible \ud83d\ude33",
       "description": "Privacy Isn't Paranoia, It's Protection. Download the Glacier app today: https://srs.site/glacierapp Support the Shawn Ryan Show ...",
       "published_at": "2026-09-09T18:00:00Z",
       "url": "https://www.youtube.com/watch?v=-jJKsQd4Bqs",
@@ -1287,19 +1300,6 @@
       "relevance_score": 1,
       "status": "pending",
       "discovered_at": "2026-09-08T12:18:59.655603",
-      "clip_markers": []
-    },
-    {
-      "video_id": "urBMztK9foE",
-      "channel_name": "CBN News Online",
-      "channel_id": "UCYI_ychRnL7sJrG6PUSBpQA",
-      "title": "Taking the Gospel to the Ends of the Earth | CBN NewsWatch - September 7, 2026",
-      "description": "CBN News takes you on a journey deep into the mountains and jungles of Papua New Guinea for an in-depth look into JAARS, ...",
-      "published_at": "2026-09-07T14:00:20Z",
-      "url": "https://www.youtube.com/watch?v=urBMztK9foE",
-      "relevance_score": 1,
-      "status": "pending",
-      "discovered_at": "2026-09-08T12:18:55.670473",
       "clip_markers": []
     }
   ]
