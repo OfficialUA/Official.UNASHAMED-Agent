@@ -1,7 +1,20 @@
 {
-  "last_updated": "2026-09-14T14:27:59.195961",
+  "last_updated": "2026-09-15T12:55:22.342171",
   "total_videos": 182,
   "videos": [
+    {
+      "video_id": "ZAF4-7gn4Eo",
+      "channel_name": "J.D. Farag",
+      "channel_id": "UCkz3m787ygph7Uvjxzngl-g",
+      "title": "Pastor JD warns that the closer we get to the pre-Tribulation Rapture, the worse the attacks",
+      "description": "Throwback to the Bible Prophecy Update from May 3, 2026. Pastor JD warns that the closer we get to the pre-Tribulation Rapture, ...",
+      "published_at": "2026-09-14T23:07:29Z",
+      "url": "https://www.youtube.com/watch?v=ZAF4-7gn4Eo",
+      "relevance_score": 6,
+      "status": "pending",
+      "discovered_at": "2026-09-15T12:55:15.422584",
+      "clip_markers": []
+    },
     {
       "video_id": "r8t7TJX_6G4",
       "channel_name": "J.D. Farag",
@@ -1287,19 +1300,6 @@
       "relevance_score": 1,
       "status": "pending",
       "discovered_at": "2026-09-09T12:30:42.058651",
-      "clip_markers": []
-    },
-    {
-      "video_id": "z76wzqaIaMw",
-      "channel_name": "L.A. Marzulli",
-      "channel_id": "UCySeXTLuH6wSJveZrA-sz9A",
-      "title": "Grays, Nephilim: Abduction Witness Testimony",
-      "description": "THE GREAT UFO DECEPTION SUMMIT 2026 \u2013 UNMASKING THE STRONG DELUSION Stream Replay of the Conference Event: ...",
-      "published_at": "2026-09-08T20:31:35Z",
-      "url": "https://www.youtube.com/watch?v=z76wzqaIaMw",
-      "relevance_score": 1,
-      "status": "pending",
-      "discovered_at": "2026-09-09T12:30:47.500150",
       "clip_markers": []
     }
   ]
