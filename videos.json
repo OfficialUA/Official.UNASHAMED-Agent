@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-09-16T12:52:51.585356",
-  "total_videos": 182,
+  "last_updated": "2026-09-17T12:49:10.515265",
+  "total_videos": 184,
   "videos": [
     {
       "video_id": "ZAF4-7gn4Eo",
@@ -65,6 +65,19 @@
       "relevance_score": 5,
       "status": "pending",
       "discovered_at": "2026-09-09T12:30:39.027510",
+      "clip_markers": []
+    },
+    {
+      "video_id": "Dy0vNUNZr30",
+      "channel_name": "J.D. Farag",
+      "channel_id": "UCkz3m787ygph7Uvjxzngl-g",
+      "title": "Pastor JD warns that today\u2019s church has acclimated to the temperature of the world",
+      "description": "Throwback to the Bible Prophecy Update from August 9, 2026 Pastor JD explains the historical backdrop of Jesus' piercing words ...",
+      "published_at": "2026-09-16T15:41:16Z",
+      "url": "https://www.youtube.com/watch?v=Dy0vNUNZr30",
+      "relevance_score": 4,
+      "status": "pending",
+      "discovered_at": "2026-09-17T12:49:03.077411",
       "clip_markers": []
     },
     {
@@ -679,6 +692,19 @@
       "clip_markers": []
     },
     {
+      "video_id": "1_foWICht6g",
+      "channel_name": "CBN News Online",
+      "channel_id": "UCYI_ychRnL7sJrG6PUSBpQA",
+      "title": "Are Demons and Nephilim Still Active Today?",
+      "description": "One of the most debated verses in the entire Bible is Genesis 6:4. What does it really mean? Billy Hallowell has been investigating ...",
+      "published_at": "2026-09-16T22:00:52Z",
+      "url": "https://www.youtube.com/watch?v=1_foWICht6g",
+      "relevance_score": 2,
+      "status": "pending",
+      "discovered_at": "2026-09-17T12:49:04.033741",
+      "clip_markers": []
+    },
+    {
       "video_id": "Cokp12biEKU",
       "channel_name": "CBN News Online",
       "channel_id": "UCYI_ychRnL7sJrG6PUSBpQA",
@@ -1225,6 +1251,19 @@
       "clip_markers": []
     },
     {
+      "video_id": "lbP8mAR7paU",
+      "channel_name": "Gabe Poirot",
+      "channel_id": "UCWKMsegWgWqOa90t-DCZkdg",
+      "title": "The Mark Of The Beast Is Ready, Yet Few Realize It..",
+      "description": "The Mark Of The Beast & The AI Endgame... On this video, Gabe Poirot talks about Walmarts digital price tags, amazon's right ...",
+      "published_at": "2026-09-16T23:47:06Z",
+      "url": "https://www.youtube.com/watch?v=lbP8mAR7paU",
+      "relevance_score": 1,
+      "status": "pending",
+      "discovered_at": "2026-09-17T12:49:09.275506",
+      "clip_markers": []
+    },
+    {
       "video_id": "YETdkoh7ryY",
       "channel_name": "Real Life Jack Hibbs",
       "channel_id": "UCzvq_2THJhueXOP8JdAO2-A",
@@ -1261,45 +1300,6 @@
       "relevance_score": 1,
       "status": "pending",
       "discovered_at": "2026-09-11T12:22:51.364477",
-      "clip_markers": []
-    },
-    {
-      "video_id": "UrTzyBiaIwE",
-      "channel_name": "Shawn Ryan Show",
-      "channel_id": "UCkoujZQZatbqy4KGcgjpVxQ",
-      "title": "Did Jesus Really Resurrect From the Dead?  | Official Preview",
-      "description": "A lot of people are scared of the end times. Should they be?\" \"No. If one is living, striving to live a good and just life, there's nothing ...",
-      "published_at": "2026-09-09T22:00:30Z",
-      "url": "https://www.youtube.com/watch?v=UrTzyBiaIwE",
-      "relevance_score": 1,
-      "status": "pending",
-      "discovered_at": "2026-09-10T12:24:22.857232",
-      "clip_markers": []
-    },
-    {
-      "video_id": "-jJKsQd4Bqs",
-      "channel_name": "Shawn Ryan Show",
-      "channel_id": "UCkoujZQZatbqy4KGcgjpVxQ",
-      "title": "Why the Church Kept These Gospels Out of the Bible \ud83d\ude33",
-      "description": "Privacy Isn't Paranoia, It's Protection. Download the Glacier app today: https://srs.site/glacierapp Support the Shawn Ryan Show ...",
-      "published_at": "2026-09-09T18:00:00Z",
-      "url": "https://www.youtube.com/watch?v=-jJKsQd4Bqs",
-      "relevance_score": 1,
-      "status": "pending",
-      "discovered_at": "2026-09-10T12:24:22.857288",
-      "clip_markers": []
-    },
-    {
-      "video_id": "7uHuq1aAxL4",
-      "channel_name": "Ruslan KD",
-      "channel_id": "UCj2yZE96gWsFyeVYnY9zXeg",
-      "title": "Phillip Anthony Mitchell Finally Addresses The Controversy...",
-      "description": "Texas Oct 24th-25th: https://blessgod.co/pages/live Phillip Anthony Mitchell Addresses \"Selling the Gospel\" Accusations... : Get ...",
-      "published_at": "2026-09-08T23:04:50Z",
-      "url": "https://www.youtube.com/watch?v=7uHuq1aAxL4",
-      "relevance_score": 1,
-      "status": "pending",
-      "discovered_at": "2026-09-09T12:30:44.674971",
       "clip_markers": []
     }
   ]
