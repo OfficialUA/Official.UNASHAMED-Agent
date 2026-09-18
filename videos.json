@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-09-17T12:49:10.515265",
-  "total_videos": 184,
+  "last_updated": "2026-09-18T12:23:50.907655",
+  "total_videos": 180,
   "videos": [
     {
       "video_id": "ZAF4-7gn4Eo",
@@ -1251,6 +1251,19 @@
       "clip_markers": []
     },
     {
+      "video_id": "NJcSuxyN7IA",
+      "channel_name": "CBN News Online",
+      "channel_id": "UCYI_ychRnL7sJrG6PUSBpQA",
+      "title": "Nephilim &amp; Demons, Patrick Clancy Speaks, Mel Gibson, 1 Timothy 5",
+      "description": "Help Persecuted Christians TODAY: https://csi-usa.org/quickstart/ Christian Solidarity International On today's Quick Start podcast: ...",
+      "published_at": "2026-09-18T10:08:23Z",
+      "url": "https://www.youtube.com/watch?v=NJcSuxyN7IA",
+      "relevance_score": 1,
+      "status": "pending",
+      "discovered_at": "2026-09-18T12:23:44.320850",
+      "clip_markers": []
+    },
+    {
       "video_id": "lbP8mAR7paU",
       "channel_name": "Gabe Poirot",
       "channel_id": "UCWKMsegWgWqOa90t-DCZkdg",
@@ -1287,19 +1300,6 @@
       "relevance_score": 1,
       "status": "pending",
       "discovered_at": "2026-09-12T11:44:39.135068",
-      "clip_markers": []
-    },
-    {
-      "video_id": "dgV6xE5ays0",
-      "channel_name": "Derek Prince Ministries",
-      "channel_id": "UCzTWdr_9IVWWmeStz5qDjoA",
-      "title": "The Overthrow of the Antichrist | Derek Prince",
-      "description": "While many antichrists have come and gone throughout history, the final Antichrist has yet to be revealed as the ultimate ...",
-      "published_at": "2026-09-10T14:30:32Z",
-      "url": "https://www.youtube.com/watch?v=dgV6xE5ays0",
-      "relevance_score": 1,
-      "status": "pending",
-      "discovered_at": "2026-09-11T12:22:51.364477",
       "clip_markers": []
     }
   ]
