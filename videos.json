@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-18T12:23:50.907655",
+  "last_updated": "2026-09-19T12:05:35.690302",
   "total_videos": 180,
   "videos": [
     {
@@ -39,6 +39,19 @@
       "relevance_score": 6,
       "status": "pending",
       "discovered_at": "2026-08-24T19:05:00.160916",
+      "clip_markers": []
+    },
+    {
+      "video_id": "OYEzDK5isRg",
+      "channel_name": "J.D. Farag",
+      "channel_id": "UCkz3m787ygph7Uvjxzngl-g",
+      "title": "Pastor JD reminds us of what the Gospel of Jesus Christ is NOT",
+      "description": "Throwback to the Bible Prophecy Update from Sunday, August 16th Pastor JD reminds us of what the Gospel of Jesus Christ is ...",
+      "published_at": "2026-09-19T01:57:50Z",
+      "url": "https://www.youtube.com/watch?v=OYEzDK5isRg",
+      "relevance_score": 5,
+      "status": "pending",
+      "discovered_at": "2026-09-19T12:05:27.656745",
       "clip_markers": []
     },
     {
@@ -1287,19 +1300,6 @@
       "relevance_score": 1,
       "status": "pending",
       "discovered_at": "2026-09-16T12:52:44.415350",
-      "clip_markers": []
-    },
-    {
-      "video_id": "Prpb_n3VfL4",
-      "channel_name": "L.A. Marzulli",
-      "channel_id": "UCySeXTLuH6wSJveZrA-sz9A",
-      "title": "Nephilim Don&#39;t Exist? A REBUTTAL!",
-      "description": "THE GREAT UFO DECEPTION SUMMIT 2026 \u2013 UNMASKING THE STRONG DELUSION Stream Replay of the Conference Event: ...",
-      "published_at": "2026-09-11T20:51:53Z",
-      "url": "https://www.youtube.com/watch?v=Prpb_n3VfL4",
-      "relevance_score": 1,
-      "status": "pending",
-      "discovered_at": "2026-09-12T11:44:39.135068",
       "clip_markers": []
     }
   ]
