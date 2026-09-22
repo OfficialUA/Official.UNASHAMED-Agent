@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-09-21T14:35:21.324508",
-  "total_videos": 180,
+  "last_updated": "2026-09-22T12:52:06.402693",
+  "total_videos": 181,
   "videos": [
     {
       "video_id": "ZAF4-7gn4Eo",
@@ -1264,6 +1264,19 @@
       "clip_markers": []
     },
     {
+      "video_id": "CILu1J_-SQQ",
+      "channel_name": "L.A. Marzulli",
+      "channel_id": "UCySeXTLuH6wSJveZrA-sz9A",
+      "title": "Johnathan Cahn Returns: More Prophecy, Altar of Pergamon and More!",
+      "description": "Cornerstone Metals Link: www.CornerstoneAssetMetals.com Phone by: 888-747-3309 Jingos Cleaner Link: www.BuyJingos.com ...",
+      "published_at": "2026-09-21T22:21:33Z",
+      "url": "https://www.youtube.com/watch?v=CILu1J_-SQQ",
+      "relevance_score": 1,
+      "status": "pending",
+      "discovered_at": "2026-09-22T12:52:06.400573",
+      "clip_markers": []
+    },
+    {
       "video_id": "2Z5e8ra4PYc",
       "channel_name": "Isaiah Saldivar",
       "channel_id": "UCeapS6tXIdBI-Hf82-MrlCA",
@@ -1287,19 +1300,6 @@
       "relevance_score": 1,
       "status": "pending",
       "discovered_at": "2026-09-18T12:23:44.320850",
-      "clip_markers": []
-    },
-    {
-      "video_id": "lbP8mAR7paU",
-      "channel_name": "Gabe Poirot",
-      "channel_id": "UCWKMsegWgWqOa90t-DCZkdg",
-      "title": "The Mark Of The Beast Is Closer Than Christians Realize..",
-      "description": "The Mark Of The Beast & The AI Endgame... On this video, Gabe Poirot talks about Walmarts digital price tags, amazon's right ...",
-      "published_at": "2026-09-16T23:47:06Z",
-      "url": "https://www.youtube.com/watch?v=lbP8mAR7paU",
-      "relevance_score": 1,
-      "status": "pending",
-      "discovered_at": "2026-09-17T12:49:09.275506",
       "clip_markers": []
     }
   ]
