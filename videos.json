@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-09-23T13:03:29.274690",
-  "total_videos": 181,
+  "last_updated": "2026-09-24T12:56:23.183538",
+  "total_videos": 182,
   "videos": [
     {
       "video_id": "ZAF4-7gn4Eo",
@@ -1264,6 +1264,32 @@
       "clip_markers": []
     },
     {
+      "video_id": "X-2VAg8wZUk",
+      "channel_name": "Real Life Jack Hibbs",
+      "channel_id": "UCzvq_2THJhueXOP8JdAO2-A",
+      "title": "Islam Expert: I Saw The Same Pattern Happen In Britain",
+      "description": "What is the truth behind the origins of Islam, and how can Christians boldly share the Gospel with their Muslim neighbors?",
+      "published_at": "2026-09-24T12:30:12Z",
+      "url": "https://www.youtube.com/watch?v=X-2VAg8wZUk",
+      "relevance_score": 1,
+      "status": "pending",
+      "discovered_at": "2026-09-24T12:56:17.207075",
+      "clip_markers": []
+    },
+    {
+      "video_id": "BVBhuSYxdZ4",
+      "channel_name": "CBN News Online",
+      "channel_id": "UCYI_ychRnL7sJrG6PUSBpQA",
+      "title": "Is Biblical Prophecy Real? Filmmaker&#39;s Surprising Investigation",
+      "description": "Filmmaker Matthew Thayer is on a mission to explore whether modern-day prophets are still delivering important messages.",
+      "published_at": "2026-09-23T16:37:15Z",
+      "url": "https://www.youtube.com/watch?v=BVBhuSYxdZ4",
+      "relevance_score": 1,
+      "status": "pending",
+      "discovered_at": "2026-09-24T12:56:17.513035",
+      "clip_markers": []
+    },
+    {
       "video_id": "CILu1J_-SQQ",
       "channel_name": "L.A. Marzulli",
       "channel_id": "UCySeXTLuH6wSJveZrA-sz9A",
@@ -1274,32 +1300,6 @@
       "relevance_score": 1,
       "status": "pending",
       "discovered_at": "2026-09-22T12:52:06.400573",
-      "clip_markers": []
-    },
-    {
-      "video_id": "2Z5e8ra4PYc",
-      "channel_name": "Isaiah Saldivar",
-      "channel_id": "UCeapS6tXIdBI-Hf82-MrlCA",
-      "title": "ANOTHER GOSPEL",
-      "description": "Become a Monthly Partner https://www.isaiahsaldivar.com/partner ORDER MY NEW BOOK: *How To Cast Out Demons* ...",
-      "published_at": "2026-09-21T00:03:27Z",
-      "url": "https://www.youtube.com/watch?v=2Z5e8ra4PYc",
-      "relevance_score": 1,
-      "status": "pending",
-      "discovered_at": "2026-09-21T14:35:19.036755",
-      "clip_markers": []
-    },
-    {
-      "video_id": "NJcSuxyN7IA",
-      "channel_name": "CBN News Online",
-      "channel_id": "UCYI_ychRnL7sJrG6PUSBpQA",
-      "title": "Nephilim &amp; Demons, Patrick Clancy Speaks, Mel Gibson, 1 Timothy 5",
-      "description": "Help Persecuted Christians TODAY: https://csi-usa.org/quickstart/ Christian Solidarity International On today's Quick Start podcast: ...",
-      "published_at": "2026-09-18T10:08:23Z",
-      "url": "https://www.youtube.com/watch?v=NJcSuxyN7IA",
-      "relevance_score": 1,
-      "status": "pending",
-      "discovered_at": "2026-09-18T12:23:44.320850",
       "clip_markers": []
     }
   ]
