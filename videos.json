@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-09-24T12:56:23.183538",
-  "total_videos": 182,
+  "last_updated": "2026-09-25T13:03:14.276556",
+  "total_videos": 183,
   "videos": [
     {
       "video_id": "ZAF4-7gn4Eo",
@@ -1264,10 +1264,23 @@
       "clip_markers": []
     },
     {
+      "video_id": "hvPVEJfn6UE",
+      "channel_name": "CrossExamined (Frank Turek)",
+      "channel_id": "UCedYGs_lqq1uNet0u7qlSyQ",
+      "title": "Would You Feel Safe at 2 AM? The Gospel Civilizes Culture.",
+      "description": "SUPPORT CROSSEXAMINED (TAX-DEDUCTIBLE) \u25cb https://donor.crossexamined.org/",
+      "published_at": "2026-09-24T20:57:24Z",
+      "url": "https://www.youtube.com/watch?v=hvPVEJfn6UE",
+      "relevance_score": 1,
+      "status": "pending",
+      "discovered_at": "2026-09-25T13:03:08.562473",
+      "clip_markers": []
+    },
+    {
       "video_id": "X-2VAg8wZUk",
       "channel_name": "Real Life Jack Hibbs",
       "channel_id": "UCzvq_2THJhueXOP8JdAO2-A",
-      "title": "Islam Expert: I Saw The Same Pattern Happen In Britain",
+      "title": "The War Has Crossed Onto American Soil",
       "description": "What is the truth behind the origins of Islam, and how can Christians boldly share the Gospel with their Muslim neighbors?",
       "published_at": "2026-09-24T12:30:12Z",
       "url": "https://www.youtube.com/watch?v=X-2VAg8wZUk",
@@ -1287,19 +1300,6 @@
       "relevance_score": 1,
       "status": "pending",
       "discovered_at": "2026-09-24T12:56:17.513035",
-      "clip_markers": []
-    },
-    {
-      "video_id": "CILu1J_-SQQ",
-      "channel_name": "L.A. Marzulli",
-      "channel_id": "UCySeXTLuH6wSJveZrA-sz9A",
-      "title": "Johnathan Cahn Returns (Part 1): More Prophecy, Altar of Pergamon and More!",
-      "description": "Cornerstone Metals Link: www.CornerstoneAssetMetals.com Phone by: 888-747-3309 Jingos Cleaner Link: www.BuyJingos.com ...",
-      "published_at": "2026-09-21T22:21:33Z",
-      "url": "https://www.youtube.com/watch?v=CILu1J_-SQQ",
-      "relevance_score": 1,
-      "status": "pending",
-      "discovered_at": "2026-09-22T12:52:06.400573",
       "clip_markers": []
     }
   ]
