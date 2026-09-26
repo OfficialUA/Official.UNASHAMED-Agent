@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-09-25T13:03:14.276556",
-  "total_videos": 183,
+  "last_updated": "2026-09-26T12:30:53.797269",
+  "total_videos": 185,
   "videos": [
     {
       "video_id": "ZAF4-7gn4Eo",
@@ -393,6 +393,19 @@
       "clip_markers": []
     },
     {
+      "video_id": "oUwbtB9JGTo",
+      "channel_name": "Gabe Poirot",
+      "channel_id": "UCWKMsegWgWqOa90t-DCZkdg",
+      "title": "Noah\u2019s Ark Remains 100% Confirmed, Fulfilling End-Times Prophecy\u2026",
+      "description": "End Times Prophecy Fulfilled W/ 100% Confirmation Of Noah's Ark Location... Noah's Ark was found near Mount Ararat. We are ...",
+      "published_at": "2026-09-25T23:37:01Z",
+      "url": "https://www.youtube.com/watch?v=oUwbtB9JGTo",
+      "relevance_score": 3,
+      "status": "pending",
+      "discovered_at": "2026-09-26T12:30:52.199454",
+      "clip_markers": []
+    },
+    {
       "video_id": "Kbeb2x7ytoY",
       "channel_name": "Behold Israel (Amir Tsarfati)",
       "channel_id": "UCa3C7WpFobavsDJdkKUtodw",
@@ -715,6 +728,19 @@
       "relevance_score": 2,
       "status": "pending",
       "discovered_at": "2026-09-17T12:49:04.033741",
+      "clip_markers": []
+    },
+    {
+      "video_id": "kRRQpjCFhEc",
+      "channel_name": "Living Waters (Ray Comfort)",
+      "channel_id": "UCmrVJGUS1u5-Hsm_BFS_1YA",
+      "title": "This VERY Popular Gospel Message, Is a Lie",
+      "description": "Pre-Order Ray Comfort's Memoir, Compelled, Today: https://livingwaters.com/compelled-book/ Get your copy of the Evidence ...",
+      "published_at": "2026-09-14T15:11:04Z",
+      "url": "https://www.youtube.com/watch?v=kRRQpjCFhEc",
+      "relevance_score": 2,
+      "status": "pending",
+      "discovered_at": "2026-09-26T12:30:47.898459",
       "clip_markers": []
     },
     {
@@ -1264,42 +1290,16 @@
       "clip_markers": []
     },
     {
-      "video_id": "hvPVEJfn6UE",
-      "channel_name": "CrossExamined (Frank Turek)",
-      "channel_id": "UCedYGs_lqq1uNet0u7qlSyQ",
-      "title": "Would You Feel Safe at 2 AM? The Gospel Civilizes Culture.",
-      "description": "SUPPORT CROSSEXAMINED (TAX-DEDUCTIBLE) \u25cb https://donor.crossexamined.org/",
-      "published_at": "2026-09-24T20:57:24Z",
-      "url": "https://www.youtube.com/watch?v=hvPVEJfn6UE",
-      "relevance_score": 1,
-      "status": "pending",
-      "discovered_at": "2026-09-25T13:03:08.562473",
-      "clip_markers": []
-    },
-    {
-      "video_id": "X-2VAg8wZUk",
-      "channel_name": "Real Life Jack Hibbs",
-      "channel_id": "UCzvq_2THJhueXOP8JdAO2-A",
-      "title": "The War Has Crossed Onto American Soil",
-      "description": "What is the truth behind the origins of Islam, and how can Christians boldly share the Gospel with their Muslim neighbors?",
-      "published_at": "2026-09-24T12:30:12Z",
-      "url": "https://www.youtube.com/watch?v=X-2VAg8wZUk",
-      "relevance_score": 1,
-      "status": "pending",
-      "discovered_at": "2026-09-24T12:56:17.207075",
-      "clip_markers": []
-    },
-    {
-      "video_id": "BVBhuSYxdZ4",
+      "video_id": "HY9oj47-Ea4",
       "channel_name": "CBN News Online",
       "channel_id": "UCYI_ychRnL7sJrG6PUSBpQA",
-      "title": "Is Biblical Prophecy Real? Filmmaker&#39;s Surprising Investigation",
-      "description": "Filmmaker Matthew Thayer is on a mission to explore whether modern-day prophets are still delivering important messages.",
-      "published_at": "2026-09-23T16:37:15Z",
-      "url": "https://www.youtube.com/watch?v=BVBhuSYxdZ4",
+      "title": "Filmmaker Reveals What Charlie Kirk Said About Biblical Prophecy Before His Assassination",
+      "description": "Filmmaker Matthew Thayer reveals what Charlie Kirk told him about prophecy, hearing from God, and the dangers of allowing ...",
+      "published_at": "2026-09-25T16:04:17Z",
+      "url": "https://www.youtube.com/watch?v=HY9oj47-Ea4",
       "relevance_score": 1,
       "status": "pending",
-      "discovered_at": "2026-09-24T12:56:17.513035",
+      "discovered_at": "2026-09-26T12:30:44.326068",
       "clip_markers": []
     }
   ]
