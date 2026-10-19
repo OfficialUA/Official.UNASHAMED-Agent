@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-10-18T12:12:48.060872",
-  "total_videos": 190,
+  "last_updated": "2026-10-19T15:02:57.757317",
+  "total_videos": 193,
   "videos": [
     {
       "video_id": "ZAF4-7gn4Eo",
@@ -390,6 +390,19 @@
       "relevance_score": 4,
       "status": "pending",
       "discovered_at": "2026-08-24T19:05:51.736881",
+      "clip_markers": []
+    },
+    {
+      "video_id": "0yoOPpcEhpU",
+      "channel_name": "Gabe Poirot",
+      "channel_id": "UCWKMsegWgWqOa90t-DCZkdg",
+      "title": "God Told Me The End Is Here..",
+      "description": "Lakes Are Becoming Deserts.. Fulfilling End Times Prophecy On this video, Gabe Poirot films a video from the Northwest America, ...",
+      "published_at": "2026-10-18T14:45:56Z",
+      "url": "https://www.youtube.com/watch?v=0yoOPpcEhpU",
+      "relevance_score": 3,
+      "status": "pending",
+      "discovered_at": "2026-10-19T15:02:56.250774",
       "clip_markers": []
     },
     {
@@ -1287,19 +1300,6 @@
       "relevance_score": 2,
       "status": "pending",
       "discovered_at": "2026-08-28T21:48:03.043582",
-      "clip_markers": []
-    },
-    {
-      "video_id": "UgG7n2qv1vI",
-      "channel_name": "Prophecy Pros",
-      "channel_id": "UCM5pZmeOIGuO3naMnJYg3gA",
-      "title": "Stand up for Jesus and be counted standing with Him.",
-      "description": "Season 10, Episode 9: Spiritual Warfare in the Last Days #prophecypros #bibleprophecy #buildbridges #spiritualwarfare.",
-      "published_at": "2025-11-24T20:00:32Z",
-      "url": "https://www.youtube.com/watch?v=UgG7n2qv1vI",
-      "relevance_score": 2,
-      "status": "pending",
-      "discovered_at": "2026-08-24T19:05:54.785772",
       "clip_markers": []
     }
   ]
