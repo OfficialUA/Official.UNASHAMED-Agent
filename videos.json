@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-10-23T12:53:35.141022",
-  "total_videos": 191,
+  "last_updated": "2026-10-24T12:16:30.237757",
+  "total_videos": 190,
   "videos": [
     {
       "video_id": "ZAF4-7gn4Eo",
@@ -390,6 +390,19 @@
       "relevance_score": 4,
       "status": "pending",
       "discovered_at": "2026-08-24T19:05:51.736881",
+      "clip_markers": []
+    },
+    {
+      "video_id": "-F3dzEymk5c",
+      "channel_name": "Gabe Poirot",
+      "channel_id": "UCWKMsegWgWqOa90t-DCZkdg",
+      "title": "Viral TikTok From Altar In Israel Fulfills End Times Third Temple Prophecy..",
+      "description": "In this video, Gabe Poirot reacts to viral TikTok's from Jerusalem that show how the altar is ready & the third temple has been ...",
+      "published_at": "2026-10-23T20:18:00Z",
+      "url": "https://www.youtube.com/watch?v=-F3dzEymk5c",
+      "relevance_score": 3,
+      "status": "pending",
+      "discovered_at": "2026-10-24T12:16:28.757302",
       "clip_markers": []
     },
     {
@@ -1287,19 +1300,6 @@
       "relevance_score": 2,
       "status": "pending",
       "discovered_at": "2026-08-28T21:48:03.043544",
-      "clip_markers": []
-    },
-    {
-      "video_id": "fBhV9KX1ZLE",
-      "channel_name": "Behold Israel (Amir Tsarfati)",
-      "channel_id": "UCa3C7WpFobavsDJdkKUtodw",
-      "title": "Global Antisemitism Explodes as Bible Prophecy Unfolds | MidEast &amp; Beyond",
-      "description": "Global antisemitism is no longer hidden. It is violent, organized, and spreading across the world at an alarming pace. In this ...",
-      "published_at": "2025-12-17T19:37:16Z",
-      "url": "https://www.youtube.com/watch?v=fBhV9KX1ZLE",
-      "relevance_score": 2,
-      "status": "pending",
-      "discovered_at": "2026-08-28T21:48:03.043582",
       "clip_markers": []
     }
   ]
