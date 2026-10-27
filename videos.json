@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-10-26T14:37:01.164993",
-  "total_videos": 191,
+  "last_updated": "2026-10-27T13:40:26.502074",
+  "total_videos": 190,
   "videos": [
     {
       "video_id": "ZAF4-7gn4Eo",
@@ -757,6 +757,19 @@
       "clip_markers": []
     },
     {
+      "video_id": "_gFsqzncAhQ",
+      "channel_name": "J.D. Farag",
+      "channel_id": "UCkz3m787ygph7Uvjxzngl-g",
+      "title": "Pastor JD reminds us hang the hat of faith and assurance on the more solid word of Bible prophecy",
+      "description": "Pastor JD reminds us not to hang the hat of faith, hope, and assurance on the miraculous, the signs, or the wonders. Instead, hang ...",
+      "published_at": "2026-10-26T15:07:12Z",
+      "url": "https://www.youtube.com/watch?v=_gFsqzncAhQ",
+      "relevance_score": 2,
+      "status": "pending",
+      "discovered_at": "2026-10-27T13:40:17.446232",
+      "clip_markers": []
+    },
+    {
       "video_id": "NCPXL6bAokc",
       "channel_name": "Behold Israel (Amir Tsarfati)",
       "channel_id": "UCa3C7WpFobavsDJdkKUtodw",
@@ -1287,19 +1300,6 @@
       "relevance_score": 2,
       "status": "pending",
       "discovered_at": "2026-08-24T19:05:48.358702",
-      "clip_markers": []
-    },
-    {
-      "video_id": "wZQCyhogsjs",
-      "channel_name": "Behold Israel (Amir Tsarfati)",
-      "channel_id": "UCa3C7WpFobavsDJdkKUtodw",
-      "title": "The Rapture of the Church: Secret or Mystery?",
-      "description": "Is the rapture of the Church spoken about in the Bible a secret or a mystery? Watch this entire teaching: ...",
-      "published_at": "2026-01-11T19:19:19Z",
-      "url": "https://www.youtube.com/watch?v=wZQCyhogsjs",
-      "relevance_score": 2,
-      "status": "pending",
-      "discovered_at": "2026-08-28T21:48:03.043544",
       "clip_markers": []
     }
   ]
