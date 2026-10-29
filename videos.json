@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-10-28T14:34:30.930705",
-  "total_videos": 188,
+  "last_updated": "2026-10-29T14:42:10.276125",
+  "total_videos": 185,
   "videos": [
     {
       "video_id": "ZAF4-7gn4Eo",
@@ -78,6 +78,19 @@
       "relevance_score": 5,
       "status": "pending",
       "discovered_at": "2026-09-09T12:30:39.027510",
+      "clip_markers": []
+    },
+    {
+      "video_id": "KBrMaYaAtjc",
+      "channel_name": "CBN News Online",
+      "channel_id": "UCYI_ychRnL7sJrG6PUSBpQA",
+      "title": "Is Iran Fulfilling Bible Prophecy? The 4 Signs Leading to the Antichrist",
+      "description": "Could the escalating crisis involving Iran be connected to ancient biblical prophecies about the end times? Author and retired ...",
+      "published_at": "2026-10-28T20:27:27Z",
+      "url": "https://www.youtube.com/watch?v=KBrMaYaAtjc",
+      "relevance_score": 4,
+      "status": "pending",
+      "discovered_at": "2026-10-29T14:42:03.556818",
       "clip_markers": []
     },
     {
@@ -1287,19 +1300,6 @@
       "relevance_score": 2,
       "status": "pending",
       "discovered_at": "2026-08-24T19:20:35.660063",
-      "clip_markers": []
-    },
-    {
-      "video_id": "ucq71vgGTjU",
-      "channel_name": "Prophecy Pros",
-      "channel_id": "UCM5pZmeOIGuO3naMnJYg3gA",
-      "title": "Does the church need to be purified?",
-      "description": "Season 14, Episode 2: Myth: The Church Will Go Through the Tribulation! #prophecypros #bibleprophecy #righteousgod ...",
-      "published_at": "2026-01-13T08:01:14Z",
-      "url": "https://www.youtube.com/watch?v=ucq71vgGTjU",
-      "relevance_score": 2,
-      "status": "pending",
-      "discovered_at": "2026-08-24T19:05:48.358702",
       "clip_markers": []
     }
   ]
