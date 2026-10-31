@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-10-30T14:37:55.474806",
-  "total_videos": 184,
+  "last_updated": "2026-10-31T13:56:01.301192",
+  "total_videos": 187,
   "videos": [
     {
       "video_id": "ZAF4-7gn4Eo",
@@ -403,6 +403,32 @@
       "relevance_score": 4,
       "status": "pending",
       "discovered_at": "2026-08-24T19:05:51.736881",
+      "clip_markers": []
+    },
+    {
+      "video_id": "ju9JIjYn0jE",
+      "channel_name": "CBN News Online",
+      "channel_id": "UCYI_ychRnL7sJrG6PUSBpQA",
+      "title": "Is Iran Chaos Bible Prophecy Happening Before Our Eyes?",
+      "description": "Could the escalating crisis involving Iran be connected to ancient biblical prophecies about the end times? Author and retired ...",
+      "published_at": "2026-10-30T20:07:25Z",
+      "url": "https://www.youtube.com/watch?v=ju9JIjYn0jE",
+      "relevance_score": 3,
+      "status": "pending",
+      "discovered_at": "2026-10-31T13:55:54.318711",
+      "clip_markers": []
+    },
+    {
+      "video_id": "SNqlYvvjfZc",
+      "channel_name": "J.D. Farag",
+      "channel_id": "UCkz3m787ygph7Uvjxzngl-g",
+      "title": "Pastor JD clarifies that God&#39;s word tells us that the pre-Tribulation rapture is our blessed hope",
+      "description": "Pastor JD clarifies that God's word tells us that this soon appearing of Jesus, the pre-Tribulation rapture, is our blessed hope and ...",
+      "published_at": "2026-10-30T15:07:05Z",
+      "url": "https://www.youtube.com/watch?v=SNqlYvvjfZc",
+      "relevance_score": 3,
+      "status": "pending",
+      "discovered_at": "2026-10-31T13:55:53.275631",
       "clip_markers": []
     },
     {
@@ -1274,32 +1300,6 @@
       "relevance_score": 2,
       "status": "pending",
       "discovered_at": "2026-08-24T19:05:46.580129",
-      "clip_markers": []
-    },
-    {
-      "video_id": "1VmbnWXdO-0",
-      "channel_name": "Prophecy Pros",
-      "channel_id": "UCM5pZmeOIGuO3naMnJYg3gA",
-      "title": "A disciple of Jesus wants to dig deeper and grow.",
-      "description": "Season 10, Episode 3: The Phenomenon of Prophetic Hunger in the Last Days #prophecypros #bibleprophecy #discipleofjesus ...",
-      "published_at": "2026-01-26T08:00:01Z",
-      "url": "https://www.youtube.com/watch?v=1VmbnWXdO-0",
-      "relevance_score": 2,
-      "status": "pending",
-      "discovered_at": "2026-08-24T19:05:47.519994",
-      "clip_markers": []
-    },
-    {
-      "video_id": "1gMopnhuIeU",
-      "channel_name": "Gabe Poirot",
-      "channel_id": "UCWKMsegWgWqOa90t-DCZkdg",
-      "title": "Exploding Trees &amp; Thunder Ice\u2026",
-      "description": "Winter Storm Fulfills End Times Biblical Prophecy Exploding Trees... Across the world, trees are literally cracking due to extreme ...",
-      "published_at": "2026-01-24T17:24:46Z",
-      "url": "https://www.youtube.com/watch?v=1gMopnhuIeU",
-      "relevance_score": 2,
-      "status": "pending",
-      "discovered_at": "2026-08-24T19:20:35.660063",
       "clip_markers": []
     }
   ]
