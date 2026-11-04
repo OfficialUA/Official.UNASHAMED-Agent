@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-11-03T15:31:10.975997",
-  "total_videos": 184,
+  "last_updated": "2026-11-04T15:49:19.185333",
+  "total_videos": 189,
   "videos": [
     {
       "video_id": "ZAF4-7gn4Eo",
@@ -403,6 +403,19 @@
       "relevance_score": 4,
       "status": "pending",
       "discovered_at": "2026-08-24T19:05:51.736881",
+      "clip_markers": []
+    },
+    {
+      "video_id": "Z3Vkc-tO_0A",
+      "channel_name": "L.A. Marzulli",
+      "channel_id": "UCySeXTLuH6wSJveZrA-sz9A",
+      "title": "Our Blessed Hope: The Rapture of the Church!",
+      "description": "Cornerstone Metals Link: www.CornerstoneAssetMetals.com Phone by: 888-747-3309 Jingos Cleaner Link: www.BuyJingos.com ...",
+      "published_at": "2026-11-03T22:01:05Z",
+      "url": "https://www.youtube.com/watch?v=Z3Vkc-tO_0A",
+      "relevance_score": 3,
+      "status": "pending",
+      "discovered_at": "2026-11-04T15:49:19.183302",
       "clip_markers": []
     },
     {
@@ -1287,19 +1300,6 @@
       "relevance_score": 2,
       "status": "pending",
       "discovered_at": "2026-08-24T19:05:45.288463",
-      "clip_markers": []
-    },
-    {
-      "video_id": "Xki0p0GK0Yc",
-      "channel_name": "Prophecy Pros",
-      "channel_id": "UCM5pZmeOIGuO3naMnJYg3gA",
-      "title": "Season 18, Episode 1: The Urgency of Bible Prophecy",
-      "description": "The Prophecy Pros highlight the wide-open door of ministry that exists right now to reach the next generation, and our ...",
-      "published_at": "2026-01-28T08:00:44Z",
-      "url": "https://www.youtube.com/watch?v=Xki0p0GK0Yc",
-      "relevance_score": 2,
-      "status": "pending",
-      "discovered_at": "2026-08-24T19:05:46.580129",
       "clip_markers": []
     }
   ]
