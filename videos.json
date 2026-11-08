@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-11-07T14:26:27.213258",
-  "total_videos": 185,
+  "last_updated": "2026-11-08T14:35:52.800456",
+  "total_videos": 190,
   "videos": [
     {
       "video_id": "ZAF4-7gn4Eo",
@@ -822,6 +822,19 @@
       "clip_markers": []
     },
     {
+      "video_id": "iiMNpOout9g",
+      "channel_name": "J.D. Farag",
+      "channel_id": "UCkz3m787ygph7Uvjxzngl-g",
+      "title": "Pastor JD shares how it is incumbent upon all of us to be open to new insight into Bible prophecy",
+      "description": "Pastor JD shares how it is incumbent upon all of us to be open, flexible, and fresh as new wine skins and new cloth to the new ...",
+      "published_at": "2026-11-07T19:05:25Z",
+      "url": "https://www.youtube.com/watch?v=iiMNpOout9g",
+      "relevance_score": 2,
+      "status": "pending",
+      "discovered_at": "2026-11-08T14:35:45.881714",
+      "clip_markers": []
+    },
+    {
       "video_id": "_gFsqzncAhQ",
       "channel_name": "J.D. Farag",
       "channel_id": "UCkz3m787ygph7Uvjxzngl-g",
@@ -1287,19 +1300,6 @@
       "relevance_score": 2,
       "status": "pending",
       "discovered_at": "2026-08-24T19:20:29.872753",
-      "clip_markers": []
-    },
-    {
-      "video_id": "VO5rqPQQBFw",
-      "channel_name": "Prophecy Pros",
-      "channel_id": "UCM5pZmeOIGuO3naMnJYg3gA",
-      "title": "Salvation is free because Jesus paid it all.",
-      "description": "Season 13, Episode 8: Confidence: Emotions of Eschatology #prophecypros #bibleprophecy #salvation #redemption ...",
-      "published_at": "2026-02-09T08:00:38Z",
-      "url": "https://www.youtube.com/watch?v=VO5rqPQQBFw",
-      "relevance_score": 2,
-      "status": "pending",
-      "discovered_at": "2026-08-24T19:05:44.498278",
       "clip_markers": []
     }
   ]
