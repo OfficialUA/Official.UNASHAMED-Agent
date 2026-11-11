@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-11-10T15:51:38.756961",
-  "total_videos": 186,
+  "last_updated": "2026-11-11T15:39:50.300234",
+  "total_videos": 189,
   "videos": [
     {
       "video_id": "ZAF4-7gn4Eo",
@@ -835,6 +835,45 @@
       "clip_markers": []
     },
     {
+      "video_id": "66HLsFp9Vu8",
+      "channel_name": "Real Life Jack Hibbs",
+      "channel_id": "UCzvq_2THJhueXOP8JdAO2-A",
+      "title": "Prophecy Experts: &quot;America May Not Survive But Iran Will&quot;",
+      "description": "Where is America in Bible prophecy, and why does Ezekiel 38 name Persia? Pastor Jack Hibbs, Todd Hampson and Jeff Kinley ...",
+      "published_at": "2026-11-08T22:44:59Z",
+      "url": "https://www.youtube.com/watch?v=66HLsFp9Vu8",
+      "relevance_score": 2,
+      "status": "pending",
+      "discovered_at": "2026-11-11T15:39:43.141035",
+      "clip_markers": []
+    },
+    {
+      "video_id": "zpOfkNxuo_E",
+      "channel_name": "Real Life Jack Hibbs",
+      "channel_id": "UCzvq_2THJhueXOP8JdAO2-A",
+      "title": "Bible Experts: A.I. Could Play A HUGE Role In End Times",
+      "description": "Will artificial intelligence play a part in the last days? Pastor Jack Hibbs, Todd Hampson and Jeff Kinley open this live Q&A with ...",
+      "published_at": "2026-11-08T20:12:37Z",
+      "url": "https://www.youtube.com/watch?v=zpOfkNxuo_E",
+      "relevance_score": 2,
+      "status": "pending",
+      "discovered_at": "2026-11-11T15:39:43.141053",
+      "clip_markers": []
+    },
+    {
+      "video_id": "0tpAGjA17cM",
+      "channel_name": "Real Life Jack Hibbs",
+      "channel_id": "UCzvq_2THJhueXOP8JdAO2-A",
+      "title": "Bible Experts Are Saying We May See The End Of The World",
+      "description": "Is the Rapture really the next event on God's calendar? In this live Q&A, Pastor Jack Hibbs and prophecy teachers Todd Hampson ...",
+      "published_at": "2026-11-08T17:42:07Z",
+      "url": "https://www.youtube.com/watch?v=0tpAGjA17cM",
+      "relevance_score": 2,
+      "status": "pending",
+      "discovered_at": "2026-11-11T15:39:43.141064",
+      "clip_markers": []
+    },
+    {
       "video_id": "iiMNpOout9g",
       "channel_name": "J.D. Farag",
       "channel_id": "UCkz3m787ygph7Uvjxzngl-g",
@@ -1261,45 +1300,6 @@
       "relevance_score": 2,
       "status": "pending",
       "discovered_at": "2026-08-24T19:20:21.935323",
-      "clip_markers": []
-    },
-    {
-      "video_id": "8uYmWtAqLOI",
-      "channel_name": "Prophecy Pros",
-      "channel_id": "UCM5pZmeOIGuO3naMnJYg3gA",
-      "title": "Season 18, Episode 7: Obstacles to Understanding Bible Prophecy",
-      "description": "The Prophecy Pros tackle common misconceptions and address obstacles to teaching Bible prophecy. *Podcast:* ...",
-      "published_at": "2026-03-11T07:00:16Z",
-      "url": "https://www.youtube.com/watch?v=8uYmWtAqLOI",
-      "relevance_score": 2,
-      "status": "pending",
-      "discovered_at": "2026-08-24T19:05:38.009254",
-      "clip_markers": []
-    },
-    {
-      "video_id": "LdDkYYz_ydU",
-      "channel_name": "Prophecy Pros",
-      "channel_id": "UCM5pZmeOIGuO3naMnJYg3gA",
-      "title": "Season 18, Episode 6: Discipleship and Bible Prophecy",
-      "description": "The Prophecy Pros discuss the incredible discipleship benefits available when teaching students Bible prophecy. *Podcast:* ...",
-      "published_at": "2026-03-04T08:00:22Z",
-      "url": "https://www.youtube.com/watch?v=LdDkYYz_ydU",
-      "relevance_score": 2,
-      "status": "pending",
-      "discovered_at": "2026-08-24T19:05:39.815664",
-      "clip_markers": []
-    },
-    {
-      "video_id": "zkJ04BrotKk",
-      "channel_name": "Gabe Poirot",
-      "channel_id": "UCWKMsegWgWqOa90t-DCZkdg",
-      "title": "They Lied To You About The Rapture..",
-      "description": "They Lied To You About The Rapture.. On this video, Gabe Poirot shares details of Christ's warning concerning the end times to ...",
-      "published_at": "2026-02-18T22:00:31Z",
-      "url": "https://www.youtube.com/watch?v=zkJ04BrotKk",
-      "relevance_score": 2,
-      "status": "pending",
-      "discovered_at": "2026-08-24T19:20:28.189680",
       "clip_markers": []
     }
   ]
