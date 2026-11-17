@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-11-16T17:32:36.505983",
-  "total_videos": 192,
+  "last_updated": "2026-11-17T17:08:12.263475",
+  "total_videos": 195,
   "videos": [
     {
       "video_id": "ZAF4-7gn4Eo",
@@ -848,6 +848,32 @@
       "clip_markers": []
     },
     {
+      "video_id": "mGpCty4zTa8",
+      "channel_name": "Behold Israel (Amir Tsarfati)",
+      "channel_id": "UCa3C7WpFobavsDJdkKUtodw",
+      "title": "Did Netanyahu Form a Government With Arab Parties?",
+      "description": "Watch the entire Connect Q&A \"The Antichrist, Judgment of Nations & What Happens After the Rapture\" out now!",
+      "published_at": "2026-11-17T01:00:15Z",
+      "url": "https://www.youtube.com/watch?v=mGpCty4zTa8",
+      "relevance_score": 2,
+      "status": "pending",
+      "discovered_at": "2026-11-17T17:08:07.364591",
+      "clip_markers": []
+    },
+    {
+      "video_id": "T-2G0QnCzLM",
+      "channel_name": "Behold Israel (Amir Tsarfati)",
+      "channel_id": "UCa3C7WpFobavsDJdkKUtodw",
+      "title": "The Antichrist, Judgment of Nations &amp; What Happens After the Rapture | CONNECT Q&amp;A",
+      "description": "Will the Holy Spirit still be on Earth after the Rapture, and who will stand before Jesus at the judgment of the nations?",
+      "published_at": "2026-11-16T17:05:43Z",
+      "url": "https://www.youtube.com/watch?v=T-2G0QnCzLM",
+      "relevance_score": 2,
+      "status": "pending",
+      "discovered_at": "2026-11-17T17:08:07.364624",
+      "clip_markers": []
+    },
+    {
       "video_id": "66HLsFp9Vu8",
       "channel_name": "Real Life Jack Hibbs",
       "channel_id": "UCzvq_2THJhueXOP8JdAO2-A",
@@ -1274,32 +1300,6 @@
       "relevance_score": 2,
       "status": "pending",
       "discovered_at": "2026-08-24T19:05:33.717440",
-      "clip_markers": []
-    },
-    {
-      "video_id": "6q0yafZ9D7Y",
-      "channel_name": "Prophecy Pros",
-      "channel_id": "UCM5pZmeOIGuO3naMnJYg3gA",
-      "title": "Season 18, Episode 9: How Bible Prophecy Helps Rescue This Generation",
-      "description": "The Prophecy Pros demonstrate the life-giving biblical worldview students can have when taught about Bible prophecy and ...",
-      "published_at": "2026-03-25T07:00:06Z",
-      "url": "https://www.youtube.com/watch?v=6q0yafZ9D7Y",
-      "relevance_score": 2,
-      "status": "pending",
-      "discovered_at": "2026-08-24T19:05:34.856028",
-      "clip_markers": []
-    },
-    {
-      "video_id": "EG6c5dexy2Y",
-      "channel_name": "Prophecy Pros",
-      "channel_id": "UCM5pZmeOIGuO3naMnJYg3gA",
-      "title": "Season 18, Episode 8: The Prophecy Pros with Joel Pickett and Collin Warner",
-      "description": "The Prophecy Pros talk about how students today view Bible prophecy, interviewing Calvary Chapel Chino Hills student ministry ...",
-      "published_at": "2026-03-18T07:00:15Z",
-      "url": "https://www.youtube.com/watch?v=EG6c5dexy2Y",
-      "relevance_score": 2,
-      "status": "pending",
-      "discovered_at": "2026-08-24T19:05:37.130893",
       "clip_markers": []
     }
   ]
