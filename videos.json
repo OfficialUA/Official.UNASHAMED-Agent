@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-11-19T16:51:55.552863",
-  "total_videos": 192,
+  "last_updated": "2026-11-20T16:27:10.464371",
+  "total_videos": 194,
   "videos": [
     {
       "video_id": "ZAF4-7gn4Eo",
@@ -848,6 +848,32 @@
       "clip_markers": []
     },
     {
+      "video_id": "xebRgiTsgig",
+      "channel_name": "L.A. Marzulli",
+      "channel_id": "UCySeXTLuH6wSJveZrA-sz9A",
+      "title": "The Third Temple Prophecy with Mondo Gonzales",
+      "description": "Cornerstone Metals Link: www.CornerstoneAssetMetals.com Phone by: 888-747-3309 ...",
+      "published_at": "2026-11-20T16:00:10Z",
+      "url": "https://www.youtube.com/watch?v=xebRgiTsgig",
+      "relevance_score": 2,
+      "status": "pending",
+      "discovered_at": "2026-11-20T16:27:10.462665",
+      "clip_markers": []
+    },
+    {
+      "video_id": "ese24A60Kww",
+      "channel_name": "J.D. Farag",
+      "channel_id": "UCkz3m787ygph7Uvjxzngl-g",
+      "title": "Visit Pastor J.D.\u2019s Bible prophecy website at http://jdfarag.org",
+      "description": "Pastor JD explains how the new wine parable that Jesus spoke to the Pharisees is applicable personally to our own lives today.",
+      "published_at": "2026-11-20T15:07:33Z",
+      "url": "https://www.youtube.com/watch?v=ese24A60Kww",
+      "relevance_score": 2,
+      "status": "pending",
+      "discovered_at": "2026-11-20T16:27:01.836833",
+      "clip_markers": []
+    },
+    {
       "video_id": "mGpCty4zTa8",
       "channel_name": "Behold Israel (Amir Tsarfati)",
       "channel_id": "UCa3C7WpFobavsDJdkKUtodw",
@@ -1274,32 +1300,6 @@
       "relevance_score": 2,
       "status": "pending",
       "discovered_at": "2026-08-24T19:04:52.701867",
-      "clip_markers": []
-    },
-    {
-      "video_id": "YDYtanGe7Mw",
-      "channel_name": "Gabe Poirot",
-      "channel_id": "UCWKMsegWgWqOa90t-DCZkdg",
-      "title": "The Rapture Isn&#39;t Just a \u201cRescue Plan\u201d..",
-      "description": "On this video, Gabe Poirot shares scriptural truth from Revelation concerning the End Times & the rapture in 1 Thess 4:13 If you'd ...",
-      "published_at": "2026-04-01T19:06:31Z",
-      "url": "https://www.youtube.com/watch?v=YDYtanGe7Mw",
-      "relevance_score": 2,
-      "status": "pending",
-      "discovered_at": "2026-08-24T19:20:18.293645",
-      "clip_markers": []
-    },
-    {
-      "video_id": "5vDferHJn0o",
-      "channel_name": "Prophecy Pros",
-      "channel_id": "UCM5pZmeOIGuO3naMnJYg3gA",
-      "title": "Season 18, Episode 10: Unpacking the Rapture for Students",
-      "description": "The Prophecy Pros discuss the rapture and introduce Todd's new book, The Non-Prophet's Guide to the Rapture, and explain why ...",
-      "published_at": "2026-04-01T07:00:00Z",
-      "url": "https://www.youtube.com/watch?v=5vDferHJn0o",
-      "relevance_score": 2,
-      "status": "pending",
-      "discovered_at": "2026-08-24T19:05:33.717440",
       "clip_markers": []
     }
   ]
