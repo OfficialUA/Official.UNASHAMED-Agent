@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-27T17:41:06.871028",
+  "last_updated": "2026-11-28T16:26:20.898007",
   "total_videos": 198,
   "videos": [
     {
@@ -39,6 +39,19 @@
       "relevance_score": 6,
       "status": "pending",
       "discovered_at": "2026-08-24T19:05:00.160916",
+      "clip_markers": []
+    },
+    {
+      "video_id": "pgE6o5BB7Gg",
+      "channel_name": "J.D. Farag",
+      "channel_id": "UCkz3m787ygph7Uvjxzngl-g",
+      "title": "Bible Prophecy Update, Increasing Narcissism Marks These Last Days - Sunday, November 29th, 2026",
+      "description": "Pastor JD openly and candidly talks about the severest satanic attack of his life from a narcissist in his life by explaining the ...",
+      "published_at": "2026-11-28T15:35:18Z",
+      "url": "https://www.youtube.com/watch?v=pgE6o5BB7Gg",
+      "relevance_score": 5,
+      "status": "pending",
+      "discovered_at": "2026-11-28T16:26:14.148703",
       "clip_markers": []
     },
     {
@@ -1287,19 +1300,6 @@
       "relevance_score": 2,
       "status": "pending",
       "discovered_at": "2026-08-24T19:05:23.194268",
-      "clip_markers": []
-    },
-    {
-      "video_id": "vrmF14uXFMw",
-      "channel_name": "Real Life Jack Hibbs",
-      "channel_id": "UCzvq_2THJhueXOP8JdAO2-A",
-      "title": "I Changed My Mind On The Rapture",
-      "description": "The rapture of the Church is a heavily debated topic. Pastor Jack breaks down how he ended up with the current rapture view he ...",
-      "published_at": "2026-06-11T12:30:17Z",
-      "url": "https://www.youtube.com/watch?v=vrmF14uXFMw",
-      "relevance_score": 2,
-      "status": "pending",
-      "discovered_at": "2026-08-25T09:55:03.296805",
       "clip_markers": []
     }
   ]
